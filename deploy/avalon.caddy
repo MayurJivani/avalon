@@ -1,0 +1,7 @@
+http://avalon.futile.studio {
+	import common
+	# Votes and quest reveals must reach every player at once; do not buffer the socket.
+	reverse_proxy 127.0.0.1:4441 {
+		flush_interval -1
+	}
+}

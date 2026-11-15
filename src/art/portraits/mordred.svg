@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360">
+  <defs>
+    <pattern id="mordred-halftone" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <circle cx="3.5" cy="3.5" r="1.6" fill="#2b1838"/>
+    </pattern>
+    <radialGradient id="mordred-glow">
+      <stop offset="0" stop-color="#ff2a3c" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#b3122e" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="mordred-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="11"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .4 0"/>
+    </filter>
+  </defs>
+
+  <!-- field -->
+  <rect width="300" height="360" fill="#141016"/>
+  <path d="M0 0H160C110 50 50 80 0 170Z" fill="#2b1838"/>
+  <path d="M300 120C250 150 236 240 270 360H300Z" fill="#3a0c16"/>
+  <path d="M0 0H160C110 50 50 80 0 170Z" fill="url(#mordred-halftone)"/>
+  <path d="M300 0V110C260 90 230 50 220 0Z" fill="url(#mordred-halftone)" opacity=".9"/>
+  <g fill="none" stroke="#b3122e" stroke-width="2.5">
+    <circle cx="256" cy="54" r="17"/>
+    <circle cx="40" cy="214" r="10"/>
+    <circle cx="276" cy="196" r="6"/>
+  </g>
+  <g fill="#b3122e">
+    <circle cx="46" cy="58" r="6"/>
+    <circle cx="230" cy="118" r="3"/>
+    <circle cx="24" cy="140" r="3"/>
+    <circle cx="282" cy="140" r="5"/>
+    <circle cx="196" cy="20" r="2.5"/>
+  </g>
+  <g fill="#2b1838">
+    <circle cx="268" cy="98" r="11"/>
+    <circle cx="80" cy="28" r="8"/>
+    <circle cx="20" cy="270" r="9"/>
+  </g>
+  <ellipse cx="150" cy="104" rx="90" ry="70" fill="#5e0a18" opacity=".35"/>
+
+  <g stroke="#0b0a0d" stroke-linejoin="round" stroke-linecap="round">
+    <!-- torn cape -->
+    <path d="M60 210C30 236 14 280 6 340L14 352L22 330L30 362L44 340L54 366L246 366L258 338L270 360L280 332L290 350L296 336C288 280 270 236 240 210Z" fill="#0b0a0d" stroke-width="6"/>
+    <path d="M44 250C30 280 22 310 18 336L26 322L32 340C34 300 40 270 56 244Z" fill="#b3122e" stroke-width="3"/>
+    <path d="M256 250C270 280 278 310 282 336L274 322L268 340C266 300 260 270 244 244Z" fill="#b3122e" stroke-width="3"/>
+
+    <!-- breastplate -->
+    <path d="M78 236C100 222 124 216 150 216C176 216 200 222 222 236C234 280 236 320 230 366L70 366C64 320 66 280 78 236Z" fill="#26202a" stroke-width="5"/>
+    <path d="M150 216C176 216 200 222 222 236C234 280 236 320 230 366L180 366C190 320 186 268 150 216Z" fill="#141016" stroke="none"/>
+    <path d="M78 236C100 222 124 216 150 216C176 216 200 222 222 236C234 280 236 320 230 366L70 366C64 320 66 280 78 236Z" fill="none" stroke-width="5"/>
+    <path d="M150 222C148 260 150 310 150 366" fill="none" stroke="#6e2a1a" stroke-width="3"/>
+    <path d="M96 270C114 262 132 262 146 268M154 268C170 262 188 262 206 270" fill="none" stroke-width="2.5"/>
+
+    <!-- gorget -->
+    <path d="M110 186C130 198 170 198 190 186L198 216C176 230 124 230 102 216Z" fill="#6e2a1a" stroke-width="4.5"/>
+    <path d="M150 196C170 196 184 192 190 186L198 216C188 222 172 226 156 228Z" fill="#45180e" stroke="none"/>
+    <path d="M110 186C130 198 170 198 190 186L198 216C176 230 124 230 102 216Z" fill="none" stroke-width="4.5"/>
+    <path d="M106 202C130 212 170 212 194 202" fill="none" stroke-width="2.5"/>
+
+    <!-- pauldrons -->
+    <path d="M104 214C84 202 54 206 38 226C28 240 30 258 40 268C56 254 80 250 100 256C110 244 112 228 104 214Z" fill="#6e2a1a" stroke-width="5"/>
+    <path d="M40 268C56 254 80 250 100 256C102 250 104 244 104 238C82 234 56 242 40 262Z" fill="#45180e" stroke="none"/>
+    <path d="M44 238C60 226 80 222 98 226" fill="none" stroke="#b3122e" stroke-width="2.5"/>
+    <path d="M196 214C216 202 246 206 262 226C272 240 270 258 260 268C244 254 220 250 200 256C190 244 188 228 196 214Z" fill="#6e2a1a" stroke-width="5"/>
+    <path d="M262 226C272 240 270 258 260 268C244 254 220 250 200 256C198 248 198 242 200 236C224 234 248 240 262 226Z" fill="#45180e" stroke="none"/>
+    <path d="M104 214C84 202 54 206 38 226C28 240 30 258 40 268C56 254 80 250 100 256C110 244 112 228 104 214Z" fill="none" stroke-width="5"/>
+    <path d="M196 214C216 202 246 206 262 226C272 240 270 258 260 268C244 254 220 250 200 256C190 244 188 228 196 214Z" fill="none" stroke-width="5"/>
+    <g fill="#d9cfb4" stroke-width="2">
+      <circle cx="58" cy="228" r="3"/><circle cx="80" cy="220" r="3"/>
+      <circle cx="220" cy="220" r="3"/><circle cx="242" cy="228" r="3"/>
+    </g>
+
+    <!-- eye glow -->
+    <ellipse cx="150" cy="114" rx="50" ry="24" fill="url(#mordred-glow)" stroke="none" opacity=".45"/>
+
+    <!-- skull -->
+    <path d="M150 52C184 51 203 76 200 108C199 126 192 136 186 144C184 158 178 170 168 178L132 178C122 170 116 158 114 144C108 136 101 126 100 108C97 76 116 53 150 52Z" fill="#d9cfb4" stroke-width="5.5"/>
+    <path d="M168 56C190 64 202 84 200 108C199 126 192 136 186 144C184 158 178 170 168 178L156 178C166 166 172 150 176 136C186 120 186 88 168 56Z" fill="#a39a80" stroke="none"/>
+    <path d="M150 52C184 51 203 76 200 108C199 126 192 136 186 144C184 158 178 170 168 178L132 178C122 170 116 158 114 144C108 136 101 126 100 108C97 76 116 53 150 52Z" fill="none" stroke-width="5.5"/>
+    <!-- sockets -->
+    <path d="M108 94C122 94 138 102 148 114C146 126 140 134 128 134C114 132 106 116 108 94Z" fill="#0b0a0d" stroke-width="3"/>
+    <path d="M192 94C178 94 162 102 152 114C154 126 160 134 172 134C186 132 194 116 192 94Z" fill="#0b0a0d" stroke-width="3"/>
+    <circle cx="130" cy="119" r="3.2" fill="#ff2a3c" stroke="none"/>
+    <circle cx="170" cy="119" r="3.2" fill="#ff2a3c" stroke="none"/>
+    <circle cx="131" cy="118" r="1" fill="#ffd0d6" stroke="none"/>
+    <circle cx="171" cy="118" r="1" fill="#ffd0d6" stroke="none"/>
+    <!-- nasal cavity -->
+    <path d="M150 128C146 136 142 142 144 146C147 148 149 146 150 144C151 146 153 148 156 146C158 142 154 136 150 128Z" fill="#0b0a0d" stroke-width="2"/>
+    <!-- cheek hollows -->
+    <path d="M116 140C122 146 126 152 128 160M184 140C178 146 174 152 172 160" fill="none" stroke-width="2.5"/>
+    <!-- teeth -->
+    <path d="M128 156C140 152 160 152 172 156L168 176C156 180 144 180 132 176Z" fill="#efe4c8" stroke-width="3"/>
+    <path d="M128 166C140 168 160 168 172 166M137 154L138 178M145 153L145 179M152 153L152 179M159 153L159 179M166 155L164 177" fill="none" stroke-width="2"/>
+    <!-- cracks -->
+    <path d="M184 78L176 88L180 96L172 102M118 84L126 92L122 98" fill="none" stroke-width="2"/>
+
+    <!-- bone crown fused to skull -->
+    <path d="M104 86C106 74 108 60 104 44C114 52 118 60 122 70C124 54 124 38 118 22C130 32 136 48 138 64C140 46 144 28 150 12C156 28 160 46 162 64C164 48 170 32 182 22C176 38 176 54 178 70C182 60 186 52 196 44C192 60 194 74 196 86C182 76 166 72 150 72C134 72 118 76 104 86Z" fill="#d9cfb4" stroke-width="5"/>
+    <path d="M150 12C156 28 160 46 162 64C164 48 170 32 182 22C176 38 176 54 178 70C182 60 186 52 196 44C192 60 194 74 196 86C188 80 178 76 168 74C170 56 164 34 150 12Z" fill="#a39a80" stroke="none"/>
+    <path d="M104 86C106 74 108 60 104 44C114 52 118 60 122 70C124 54 124 38 118 22C130 32 136 48 138 64C140 46 144 28 150 12C156 28 160 46 162 64C164 48 170 32 182 22C176 38 176 54 178 70C182 60 186 52 196 44C192 60 194 74 196 86C182 76 166 72 150 72C134 72 118 76 104 86Z" fill="none" stroke-width="5"/>
+    <path d="M144 70L150 60L156 70L150 80Z" fill="#b3122e" stroke-width="2.5"/>
+    <path d="M110 82C124 74 138 72 146 72M154 72C164 72 178 74 190 82" fill="none" stroke-width="2"/>
+
+    <!-- black blade across the chest -->
+    <path d="M78 300L248 178L262 168L256 184L90 314Z" fill="#0b0a0d" stroke-width="5"/>
+    <path d="M86 304L250 182" fill="none" stroke="#b3122e" stroke-width="2.5"/>
+    <path d="M92 312L254 186" fill="none" stroke="#2b1838" stroke-width="2"/>
+    <!-- crossguard -->
+    <path d="M56 286C70 290 82 300 90 316C94 324 104 324 102 314C94 298 80 286 64 278C56 274 50 282 56 286Z" fill="#6e2a1a" stroke-width="4"/>
+    <!-- grip -->
+    <path d="M70 312L42 336" fill="none" stroke-width="12"/>
+    <path d="M70 312L42 336" fill="none" stroke="#2b1838" stroke-width="6"/>
+    <circle cx="38" cy="340" r="7" fill="#b3122e" stroke-width="4"/>
+    <!-- bone hand -->
+    <path d="M50 316C58 310 70 312 72 320C74 328 66 336 56 338C48 338 44 332 46 324Z" fill="#d9cfb4" stroke-width="4"/>
+    <path d="M54 318C60 316 66 318 68 322M50 326C56 324 62 326 66 330M50 333C54 332 58 334 60 336" fill="none" stroke-width="2"/>
+  </g>
+
+  <rect width="300" height="360" filter="url(#mordred-grain)" opacity=".12"/>
+</svg>

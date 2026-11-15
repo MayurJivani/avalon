@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360">
+  <defs>
+    <pattern id="assassin-halftone" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <circle cx="3.5" cy="3.5" r="1.6" fill="#5e0a18"/>
+    </pattern>
+    <radialGradient id="assassin-glow">
+      <stop offset="0" stop-color="#ff5a6e" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#b3122e" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="assassin-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0"/>
+    </filter>
+  </defs>
+
+  <!-- field -->
+  <rect width="300" height="360" fill="#b3122e"/>
+  <path d="M0 0H170C120 40 60 70 0 150Z" fill="#c9203a"/>
+  <path d="M300 160C240 200 230 270 260 360H300Z" fill="#5e0a18" opacity=".55"/>
+  <path d="M0 200C40 180 70 230 60 290C52 330 20 350 0 360Z" fill="url(#assassin-halftone)" opacity=".8"/>
+  <path d="M190 0H300V120C260 110 230 60 190 0Z" fill="url(#assassin-halftone)" opacity=".6"/>
+  <g fill="none" stroke="#e8475c" stroke-width="2.5">
+    <circle cx="44" cy="58" r="17"/>
+    <circle cx="262" cy="196" r="11"/>
+    <circle cx="30" cy="250" r="7"/>
+  </g>
+  <g fill="#e8475c" opacity=".7">
+    <circle cx="250" cy="40" r="9"/>
+    <circle cx="70" cy="140" r="5"/>
+    <circle cx="276" cy="120" r="4"/>
+    <circle cx="22" cy="110" r="3"/>
+    <circle cx="96" cy="28" r="2.5"/>
+    <circle cx="230" cy="250" r="3"/>
+  </g>
+  <g fill="#5e0a18">
+    <circle cx="276" cy="78" r="14"/>
+    <circle cx="28" cy="180" r="10"/>
+    <circle cx="214" cy="20" r="4"/>
+    <circle cx="58" cy="96" r="3"/>
+    <circle cx="16" cy="300" r="5"/>
+  </g>
+
+  <g stroke="#0b0a0d" stroke-linejoin="round" stroke-linecap="round">
+    <!-- cloak / shoulders -->
+    <path d="M-6 368C4 300 22 262 60 236C86 218 104 210 120 196L182 196C200 212 222 220 246 236C278 258 296 300 306 368Z" fill="#0b0a0d" stroke-width="6"/>
+    <path d="M30 360C40 312 58 280 84 258" fill="none" stroke="#2c2630" stroke-width="3"/>
+    <path d="M112 360C106 320 110 282 124 250" fill="none" stroke="#2c2630" stroke-width="3"/>
+    <path d="M60 300C70 280 82 268 98 256" fill="none" stroke="#3a1018" stroke-width="2.5"/>
+
+    <!-- hood -->
+    <path d="M150 24C116 22 84 48 76 96C70 136 76 170 64 204C56 224 44 236 30 248C70 248 104 234 126 214L178 214C200 236 236 250 272 248C254 232 238 214 232 186C226 154 236 128 228 94C220 50 188 26 150 24Z" fill="#0b0a0d" stroke-width="6"/>
+    <!-- lit fold on hood -->
+    <path d="M150 30C120 30 96 52 88 92C84 112 86 134 84 152C96 120 104 86 124 60C134 46 144 38 150 30Z" fill="#2c2630" stroke="none"/>
+    <path d="M86 196C80 214 66 230 48 242C70 240 90 230 104 218Z" fill="#2c2630" stroke="none"/>
+    <path d="M222 112C226 140 220 170 232 196C238 210 248 224 260 236C240 228 224 212 216 190C210 166 218 140 222 112Z" fill="#3a1018" stroke="none"/>
+    <path d="M100 74C110 56 128 44 146 40" fill="none" stroke="#4a4250" stroke-width="2.5"/>
+    <path d="M84 96C78 136 84 172 70 206C62 222 52 234 40 244" fill="none" stroke="#7a0f22" stroke-width="3"/>
+    <path d="M228 98C232 128 224 156 230 182" fill="none" stroke="#7a0f22" stroke-width="3"/>
+
+    <!-- face cavity -->
+    <path d="M150 50C122 50 102 74 100 110C98 142 104 168 112 186L190 186C198 166 202 140 200 108C198 72 178 50 150 50Z" fill="#050406" stroke-width="3"/>
+
+    <!-- eye glow -->
+    <ellipse cx="150" cy="112" rx="46" ry="26" fill="url(#assassin-glow)" stroke="none" opacity=".55"/>
+
+    <!-- porcelain mask -->
+    <path d="M151 62C176 61 191 82 190 110C189 140 175 166 152 172C128 168 112 144 111 114C110 84 126 63 151 62Z" fill="#ece6da" stroke-width="4"/>
+    <path d="M158 63C178 68 190 86 190 110C189 140 175 166 152 172C168 156 176 136 176 110C176 88 170 72 158 63Z" fill="#c9bfae" stroke="none"/>
+    <path d="M151 62C176 61 191 82 190 110C189 140 175 166 152 172C128 168 112 144 111 114C110 84 126 63 151 62Z" fill="none" stroke-width="4"/>
+    <!-- brow ridge + nose -->
+    <path d="M124 100C134 94 144 96 148 102M154 102C160 95 172 94 180 100" fill="none" stroke-width="2"/>
+    <path d="M152 108C151 120 150 128 147 134" fill="none" stroke-width="2"/>
+    <!-- eye slits -->
+    <path d="M122 112C130 104 140 104 147 110C139 116 129 117 122 112Z" fill="#ff3049" stroke-width="2.5"/>
+    <path d="M155 110C162 104 173 103 181 111C173 117 162 116 155 110Z" fill="#ff3049" stroke-width="2.5"/>
+    <path d="M128 111C134 109 139 109 143 110M160 110C165 108 170 108 175 110" fill="none" stroke="#ffd0d6" stroke-width="1.2"/>
+    <!-- crack -->
+    <path d="M136 63L140 76L133 84L139 96L134 104M140 76L148 80M133 84L124 86" fill="none" stroke-width="2.2"/>
+    <path d="M176 130L168 138L171 146L163 156" fill="none" stroke-width="1.8"/>
+
+    <!-- scarf -->
+    <path d="M104 150C126 162 176 162 200 148C206 164 204 180 196 192C176 206 126 206 104 192C98 178 98 162 104 150Z" fill="#0b0a0d" stroke-width="5"/>
+    <path d="M108 160C130 172 172 172 196 158" fill="none" stroke="#2c2630" stroke-width="3"/>
+    <path d="M106 178C128 190 170 190 198 174" fill="none" stroke="#2c2630" stroke-width="3"/>
+    <path d="M120 196C114 220 104 244 92 262C112 256 126 240 136 224C138 214 136 204 134 198" fill="#0b0a0d" stroke-width="4"/>
+    <path d="M118 210C114 226 108 240 100 252" fill="none" stroke="#2c2630" stroke-width="2.5"/>
+
+    <!-- dagger blade -->
+    <path d="M216 214C244 178 252 122 206 56C226 108 222 168 198 210Z" fill="#9aa3ad" stroke-width="4.5"/>
+    <path d="M216 214C244 178 252 122 206 56C232 110 230 166 208 212Z" fill="#5d6670" stroke="none"/>
+    <path d="M208 72C226 112 222 160 204 202" fill="none" stroke="#efe4c8" stroke-width="3"/>
+    <path d="M216 214C244 178 252 122 206 56C226 108 222 168 198 210Z" fill="none" stroke-width="4.5"/>
+    <!-- blood -->
+    <path d="M224 100C228 108 230 114 227 119C224 123 218 121 218 116C218 110 222 106 224 100Z" fill="#b3122e" stroke-width="2"/>
+    <path d="M222 108C222 112 223 115 225 116" fill="none" stroke="#ff8090" stroke-width="1.2"/>
+
+    <!-- guard + grip -->
+    <path d="M186 212C200 206 222 206 240 214C242 220 238 224 232 222C218 218 202 218 190 222C184 222 182 216 186 212Z" fill="#5d6670" stroke-width="4"/>
+    <!-- gloved fist -->
+    <path d="M190 226C200 220 222 220 236 228C244 236 244 254 236 266C224 276 202 276 192 266C184 256 184 236 190 226Z" fill="#1f1a22" stroke-width="5"/>
+    <path d="M192 228C204 222 220 222 232 228C226 232 202 232 192 234Z" fill="#7a0f22" stroke="none"/>
+    <path d="M194 238C206 234 222 234 236 240M194 250C206 246 222 246 236 252M196 262C208 258 222 258 234 264" fill="none" stroke-width="2.5"/>
+    <path d="M190 232C182 234 180 246 188 250" fill="#0b0a0d" stroke-width="3"/>
+    <!-- sleeve -->
+    <path d="M196 268C208 296 214 328 210 368L300 368C296 330 280 296 238 262Z" fill="#0b0a0d" stroke-width="6"/>
+    <path d="M226 286C238 306 244 330 244 360M212 300C220 316 224 334 224 356" fill="none" stroke="#2c2630" stroke-width="3"/>
+    <path d="M200 270C214 276 228 274 240 266" fill="none" stroke="#3a1018" stroke-width="3"/>
+  </g>
+
+  <!-- falling drop -->
+  <path d="M232 140C235 146 236 150 233 153C230 155 227 153 227 150C227 146 230 144 232 140Z" fill="#b3122e" stroke="#0b0a0d" stroke-width="1.8"/>
+
+  <rect width="300" height="360" filter="url(#assassin-grain)" opacity=".22"/>
+</svg>

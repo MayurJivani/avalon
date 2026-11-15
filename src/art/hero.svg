@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <clipPath id="hero-tear">
+      <polygon points="0,0 600,0 600,736 584,748 562,730 540,758 516,736 494,746 470,724 448,750 424,732 402,764 380,738 356,748 334,726 312,752 290,734 268,762 246,736 222,744 196,722 176,748 152,730 130,758 104,732 88,746 64,724 40,750 22,728 0,742"/>
+    </clipPath>
+    <path id="hero-sil" d="M300 296 C228 296 160 314 120 358 C82 400 64 460 58 516 L40 538 L54 552 L46 608 L22 634 L46 642 L36 700 L16 730 L26 800 L574 800 L584 722 L562 690 L568 640 L586 612 L560 600 L556 548 L574 528 L544 512 C536 450 518 400 480 358 C440 314 372 296 300 296 Z"/>
+    <clipPath id="hero-sil-clip"><use href="#hero-sil"/></clipPath>
+    <radialGradient id="hero-eyeglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c6ff3d" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#c6ff3d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g clip-path="url(#hero-tear)">
+    <!-- mantle -->
+    <use href="#hero-sil" fill="#7a0f22" stroke="#0b0a0d" stroke-width="7" stroke-linejoin="round"/>
+    <g clip-path="url(#hero-sil-clip)">
+      <path d="M120 358 C150 420 150 520 132 800 L26 800 L36 700 L46 608 L58 516 C64 460 82 400 120 358 Z" fill="#4a0814"/>
+      <path d="M480 358 C460 430 470 560 500 800 L574 800 L568 640 L556 548 C536 450 518 400 480 358 Z" fill="#4a0814"/>
+      <path d="M470 420 C468 520 480 660 500 800 L476 800 C462 660 458 520 470 420 Z" fill="#0b0a0d"/>
+      <path d="M536 510 C528 450 512 404 482 368" fill="none" stroke="#9e1a30" stroke-width="4" stroke-linecap="round"/>
+      <path d="M96 470 C110 560 104 680 92 800 M170 440 C186 560 180 690 176 800 M448 450 C430 560 432 680 440 800 M512 470 C524 580 528 700 524 800" fill="none" stroke="#0b0a0d" stroke-width="5" stroke-linecap="round"/>
+      <path d="M64 510 C74 450 92 400 122 366" fill="none" stroke="#c22a3e" stroke-width="5" stroke-linecap="round"/>
+      <path d="M60 530 L48 544 M50 616 L34 634 M42 704 L28 728" stroke="#c22a3e" stroke-width="4" stroke-linecap="round"/>
+    </g>
+
+    <!-- breastplate -->
+    <path d="M232 396 C226 480 236 600 244 800 L356 800 C364 600 374 480 368 396 Z" fill="#4b5360" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M300 404 C330 404 352 400 368 396 C374 480 364 600 356 800 L320 800 C330 640 330 500 300 404 Z" fill="#2b3038"/>
+    <path d="M232 520 C262 532 338 532 368 520 M236 600 C264 612 336 612 362 600 M240 680 C266 692 334 692 358 680" fill="none" stroke="#0b0a0d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M232 410 C226 480 230 560 240 640" fill="none" stroke="#8d97a3" stroke-width="3" stroke-linecap="round"/>
+    <!-- mantle front edges over armor -->
+    <path d="M150 380 C190 420 214 520 214 800 L120 800 C140 640 150 500 150 380 Z" fill="#7a0f22" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M450 380 C410 420 386 520 386 800 L480 800 C460 640 450 500 450 380 Z" fill="#4a0814" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M200 470 C210 560 210 680 206 800" fill="none" stroke="#c22a3e" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- ragged hair + beard -->
+    <path d="M254 186 C232 230 226 300 236 352 L250 336 L256 360 C262 300 258 240 268 200 Z" fill="#6b6874" stroke="#0b0a0d" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M346 186 C370 232 376 300 362 354 L350 338 L342 364 C340 300 342 240 332 200 Z" fill="#3a3842" stroke="#0b0a0d" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M276 296 C280 330 290 354 298 384 C306 354 318 330 326 296 Z" fill="#3a3842" stroke="#0b0a0d" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M286 312 C290 334 294 350 298 368 M312 312 C310 334 306 350 302 364" fill="none" stroke="#6b6874" stroke-width="2" stroke-linecap="round"/>
+    <path d="M246 232 C240 276 240 312 244 340 M262 214 C256 260 254 300 254 344 M352 236 C360 280 358 314 354 340" fill="none" stroke="#0b0a0d" stroke-width="2.2" stroke-linecap="round"/>
+
+    <!-- ermine collar -->
+    <path d="M140 386 C160 344 226 320 300 320 C374 320 440 344 460 386 C432 404 394 398 372 414 C350 402 326 412 300 404 C274 412 250 402 228 414 C206 398 168 404 140 386 Z"
+          fill="#efe4c8" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M340 330 C400 336 440 356 456 384 C432 398 396 394 372 410 C374 380 360 350 340 330 Z" fill="#c9b78f"/>
+    <g fill="#0b0a0d">
+      <path d="M184 372 c-3 6 -3 12 0 16 c3 -4 3 -10 0 -16 Z"/><path d="M228 352 c-3 6 -3 12 0 16 c3 -4 3 -10 0 -16 Z"/>
+      <path d="M268 378 c-3 6 -3 12 0 16 c3 -4 3 -10 0 -16 Z"/><path d="M336 380 c-3 6 -3 12 0 16 c3 -4 3 -10 0 -16 Z"/>
+      <path d="M380 354 c-3 6 -3 12 0 16 c3 -4 3 -10 0 -16 Z"/><path d="M420 376 c-3 6 -3 12 0 16 c3 -4 3 -10 0 -16 Z"/>
+    </g>
+    <!-- neck -->
+    <path d="M276 290 C278 310 280 324 284 336 L316 336 C320 324 322 310 324 290 Z" fill="#0b0a0d"/>
+
+    <!-- head, face lost in shadow -->
+    <path d="M300 136 C262 136 246 168 248 210 C250 248 258 278 278 304 C288 318 312 318 322 304 C342 278 350 248 352 210 C354 168 338 136 300 136 Z"
+          fill="#0b0a0d" stroke="#0b0a0d" stroke-width="6"/>
+    <path d="M252 196 C250 236 258 272 278 302" fill="none" stroke="#6b6874" stroke-width="3" stroke-linecap="round"/>
+    <path d="M348 196 C350 236 342 272 322 302" fill="none" stroke="#3a3842" stroke-width="3" stroke-linecap="round"/>
+    <path d="M258 236 C262 262 270 284 282 298 C274 276 270 256 270 240 C266 236 262 234 258 236 Z" fill="#3a3842"/>
+    <path d="M262 238 C272 240 280 244 288 246" fill="none" stroke="#4b5360" stroke-width="2" stroke-linecap="round"/>
+    <path d="M348 232 C346 260 338 284 324 300 C330 278 336 256 338 236 Z" fill="#1c1b21"/>
+    <path d="M300 226 C298 240 296 252 292 262 C296 266 304 266 308 262" fill="none" stroke="#3a3842" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M282 286 C292 282 308 282 318 286" fill="none" stroke="#2a2830" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="281" cy="222" r="18" fill="url(#hero-eyeglow)"/>
+    <circle cx="319" cy="222" r="18" fill="url(#hero-eyeglow)"/>
+    <path d="M273 222 C277 218 285 218 289 222 C285 225 277 225 273 222 Z" fill="#c6ff3d"/>
+    <path d="M311 222 C315 218 323 218 327 222 C323 225 315 225 311 222 Z" fill="#c6ff3d"/>
+    <circle cx="281" cy="222" r="1.5" fill="#f4ffd6"/><circle cx="319" cy="222" r="1.5" fill="#f4ffd6"/>
+
+    <!-- jagged iron crown -->
+    <path d="M242 198 L246 164 L250 116 L264 156 L274 96 L288 152 L300 76 L312 150 L332 100 L338 156 L352 124 L356 166 L358 198 C330 208 270 208 242 198 Z"
+          fill="#4b5360" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M300 80 L312 150 L332 100 L338 156 L352 124 L356 166 L358 198 C342 202 326 204 312 204 C318 170 306 120 300 80 Z" fill="#2b3038"/>
+    <path d="M244 168 C270 160 330 160 356 168 L358 198 C330 208 270 208 242 198 Z" fill="#2b3038" stroke="#0b0a0d" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M252 172 C272 166 300 165 318 166" fill="none" stroke="#8d97a3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M252 128 L258 156 M276 108 L282 148 M298 92 L298 146" fill="none" stroke="#8d97a3" stroke-width="2.5" stroke-linecap="round"/>
+    <g fill="#0b0a0d"><circle cx="262" cy="186" r="3"/><circle cx="300" cy="188" r="3.5"/><circle cx="338" cy="186" r="3"/></g>
+
+    <!-- upper arms + forearms -->
+    <path d="M172 396 C162 440 164 492 178 530 L212 522 C204 482 206 440 216 404 Z" fill="#4b5360" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M428 396 C438 440 436 492 422 530 L388 522 C396 482 394 440 384 404 Z" fill="#2b3038" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M180 420 C174 450 174 480 182 506" fill="none" stroke="#8d97a3" stroke-width="3" stroke-linecap="round"/>
+    <path d="M178 520 C184 480 224 446 266 420 L284 462 C248 480 220 506 206 534 Z" fill="#4b5360" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M422 520 C416 480 376 446 334 420 L316 462 C352 480 380 506 394 534 Z" fill="#2b3038" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M196 492 C210 500 218 512 222 524 M404 492 C390 500 382 512 378 524" fill="none" stroke="#0b0a0d" stroke-width="3" stroke-linecap="round"/>
+    <path d="M190 506 C206 478 232 456 258 440" fill="none" stroke="#8d97a3" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- sword, point down -->
+    <path d="M284 488 L316 488 L312 790 L300 806 L288 790 Z" fill="#c3cad2" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M300 488 L316 488 L312 790 L300 806 Z" fill="#8d97a3"/>
+    <path d="M300 500 L300 780" stroke="#4b5360" stroke-width="3" stroke-linecap="round"/>
+    <path d="M290 520 L290 640" stroke="#efe4c8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M316 590 L308 598 L316 606 M284 690 L292 696 L284 704" fill="#0b0a0d" stroke="#0b0a0d" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M214 466 C250 476 350 476 386 466 L392 486 C380 484 372 490 370 498 C340 488 260 488 230 498 C228 490 220 484 208 486 Z"
+          fill="#4b5360" stroke="#0b0a0d" stroke-width="5.5" stroke-linejoin="round"/>
+    <path d="M300 474 C340 474 370 472 386 466 L392 486 C380 484 372 490 370 498 C350 492 324 490 300 490 Z" fill="#2b3038"/>
+    <rect x="290" y="378" width="20" height="92" fill="#3a3842" stroke="#0b0a0d" stroke-width="5"/>
+    <circle cx="300" cy="366" r="16" fill="#4b5360" stroke="#0b0a0d" stroke-width="5.5"/>
+    <circle cx="300" cy="366" r="5" fill="#c6ff3d"/>
+
+    <!-- gauntlets, both hands on the grip -->
+    <path d="M262 392 C268 382 324 380 336 390 C344 400 344 418 338 428 C326 436 274 436 264 428 C256 418 256 402 262 392 Z"
+          fill="#8d97a3" stroke="#0b0a0d" stroke-width="5.5" stroke-linejoin="round"/>
+    <path d="M300 384 C320 382 332 384 336 390 C344 400 344 418 338 428 C326 434 312 435 304 435 C312 418 312 400 300 384 Z" fill="#4b5360"/>
+    <path d="M266 404 C288 400 316 400 338 404 M266 418 C288 414 316 414 338 418" fill="none" stroke="#0b0a0d" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M260 434 C266 424 330 422 342 432 C350 442 350 458 344 468 C330 476 272 476 262 468 C254 458 254 444 260 434 Z"
+          fill="#8d97a3" stroke="#0b0a0d" stroke-width="5.5" stroke-linejoin="round"/>
+    <path d="M302 428 C324 426 336 428 342 432 C350 442 350 458 344 468 C332 474 318 475 306 475 C314 458 314 444 302 428 Z" fill="#4b5360"/>
+    <path d="M262 446 C286 442 318 442 344 446 M262 458 C286 454 318 454 344 458" fill="none" stroke="#0b0a0d" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M268 396 C276 390 288 388 298 388 M266 438 C276 432 290 430 300 430" fill="none" stroke="#d4dae0" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- torn paper lip -->
+    <polygon points="0,742 22,728 40,750 64,724 88,746 104,732 130,758 152,730 176,748 196,722 222,744 246,736 268,762 290,734 312,752 334,726 356,748 380,738 402,764 424,732 448,750 470,724 494,746 516,736 540,758 562,730 584,748 600,736 600,724 584,734 562,718 540,742 516,724 494,732 470,712 448,736 424,720 402,748 380,726 356,734 334,714 312,738 290,722 268,746 246,724 222,730 196,710 176,734 152,718 130,742 104,720 88,732 64,712 40,736 22,716 0,730"
+             fill="#efe4c8" clip-path="url(#hero-sil-clip)"/>
+  </g>
+</svg>

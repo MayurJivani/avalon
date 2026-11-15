@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360" width="300" height="360">
+  <defs>
+    <pattern id="merlin-halftone" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <circle cx="3.5" cy="3.5" r="1.4" fill="#3d7bff"/>
+    </pattern>
+    <radialGradient id="merlin-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9fc0ff" stop-opacity="0.95"/>
+      <stop offset="0.35" stop-color="#3d7bff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#3d7bff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="merlin-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="7"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.9 0"/>
+    </filter>
+  </defs>
+
+  <!-- night field -->
+  <rect width="300" height="360" fill="#16233f"/>
+  <path d="M300 0 L300 170 C262 150 236 104 240 58 C242 30 252 12 262 0 Z" fill="url(#merlin-halftone)" opacity="0.45"/>
+  <path d="M0 250 C30 262 52 300 48 360 L0 360 Z" fill="url(#merlin-halftone)" opacity="0.35"/>
+  <circle cx="168" cy="112" r="112" fill="#1f3159"/>
+  <circle cx="168" cy="112" r="86" fill="none" stroke="#2a4274" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+  <g fill="#0e1830">
+    <circle cx="36" cy="40" r="22"/><circle cx="276" cy="226" r="30"/><circle cx="24" cy="318" r="14"/><circle cx="250" cy="330" r="9"/>
+  </g>
+  <g fill="none" stroke="#2c4479" stroke-width="2.5">
+    <circle cx="262" cy="74" r="16"/><circle cx="30" cy="112" r="9"/><circle cx="282" cy="300" r="12"/><circle cx="110" cy="22" r="6"/>
+  </g>
+  <g fill="#efe4c8">
+    <path d="M232 36 l2.5 -9 l2.5 9 l9 2.5 l-9 2.5 l-2.5 9 l-2.5 -9 l-9 -2.5 Z"/>
+    <path d="M40 76 l1.6 -6 l1.6 6 l6 1.6 l-6 1.6 l-1.6 6 l-1.6 -6 l-6 -1.6 Z"/>
+    <path d="M270 150 l1.4 -5 l1.4 5 l5 1.4 l-5 1.4 l-1.4 5 l-1.4 -5 l-5 -1.4 Z"/>
+    <circle cx="86" cy="40" r="1.8"/><circle cx="206" cy="16" r="1.4"/><circle cx="288" cy="110" r="1.6"/><circle cx="14" cy="180" r="1.5"/>
+    <circle cx="252" cy="270" r="1.4"/><circle cx="18" cy="236" r="1.2"/><circle cx="140" cy="12" r="1.2"/><circle cx="60" cy="10" r="1"/>
+  </g>
+  <g fill="#3d7bff">
+    <circle cx="196" cy="30" r="2"/><circle cx="22" cy="150" r="2.2"/><circle cx="284" cy="190" r="1.8"/><circle cx="62" cy="300" r="1.6"/>
+  </g>
+
+  <!-- robe body -->
+  <path d="M46 362 C52 306 74 258 108 234 C140 214 198 210 230 222 C264 236 288 270 298 316 L304 362 Z"
+        fill="#5b2b73" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M206 222 C236 230 264 256 280 296 C288 318 292 340 294 360 L236 360 C238 320 230 280 214 252 Z" fill="#371848"/>
+  <path d="M98 250 C84 276 74 316 72 360" fill="none" stroke="#7f45a0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M122 268 C118 300 120 330 128 358 M236 266 C246 300 250 330 250 358" fill="none" stroke="#0b0a0d" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- hood -->
+  <path d="M196 22 C176 20 150 26 128 44 C106 64 100 96 101 124 C102 152 108 180 96 206 C90 222 108 236 128 228 C150 232 186 228 208 231 C232 236 252 222 245 202 C234 172 243 140 238 104 C236 78 232 60 224 48 C240 46 254 54 264 68 C258 42 230 22 196 22 Z"
+        fill="#5b2b73" stroke="#0b0a0d" stroke-width="6.5" stroke-linejoin="round"/>
+  <path d="M200 44 C224 62 236 88 236 116 C236 148 232 176 244 204 C246 216 236 226 220 228 C226 200 222 168 222 138 C222 100 214 68 200 44 Z" fill="#0b0a0d"/>
+  <path d="M226 50 C242 50 254 58 262 66 C252 52 236 44 222 44 Z" fill="#0b0a0d"/>
+  <path d="M118 66 C106 88 104 120 110 152" fill="none" stroke="#8a52ad" stroke-width="4" stroke-linecap="round"/>
+  <!-- hood mouth, face lost in shadow -->
+  <path d="M168 60 C140 62 124 86 124 116 C124 148 130 172 140 192 L198 194 C208 170 214 144 212 114 C210 84 194 60 168 60 Z" fill="#0b0a0d"/>
+  <path d="M130 100 C126 120 128 146 136 170" fill="none" stroke="#3d7bff" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <path d="M142 112 C150 106 160 108 166 114 L163 116 C156 112 150 112 144 116 Z M192 110 C184 105 174 107 168 114 L171 116 C178 112 184 112 190 115 Z" fill="#5a5468"/>
+  <path d="M166 114 C168 124 172 132 174 140 C170 143 164 142 162 139" fill="none" stroke="#6b6378" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="153" cy="120" rx="5" ry="2.6" fill="#3d7bff"/>
+  <ellipse cx="182" cy="120" rx="5" ry="2.6" fill="#3d7bff"/>
+  <circle cx="153" cy="120" r="1.4" fill="#e6efff"/><circle cx="182" cy="120" r="1.4" fill="#e6efff"/>
+
+  <!-- beard -->
+  <path d="M132 142 C140 152 152 148 168 152 C184 148 196 152 204 140 C210 170 206 198 214 228 C222 260 214 288 198 310 C188 324 178 336 170 352 C164 334 156 322 144 310 C124 288 118 258 124 228 C128 198 124 170 132 142 Z"
+        fill="#efe4c8" stroke="#0b0a0d" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M186 156 C200 168 196 200 204 226 C212 256 206 282 190 304 C182 316 176 328 170 340 C176 312 190 290 192 262 C194 230 184 196 186 156 Z" fill="#c9b78f"/>
+  <!-- moustache -->
+  <path d="M136 146 C146 138 158 138 168 146 C178 138 192 138 202 146 C196 158 184 160 176 156 C172 166 170 178 168 190 C166 178 164 166 160 156 C152 160 140 158 136 146 Z"
+        fill="#efe4c8" stroke="#0b0a0d" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="none" stroke="#0b0a0d" stroke-width="2.2" stroke-linecap="round">
+    <path d="M146 176 C142 210 146 250 158 286"/>
+    <path d="M160 186 C158 220 162 260 168 300"/>
+    <path d="M178 182 C182 214 182 252 176 290"/>
+    <path d="M136 210 C134 240 138 266 148 290"/>
+    <path d="M196 196 C202 230 200 258 190 282"/>
+  </g>
+
+  <!-- raised sleeve + hand -->
+  <path d="M112 236 C100 256 80 274 54 276 C36 276 28 262 34 246 C40 230 52 222 66 218 L90 212 C102 216 112 224 112 236 Z"
+        fill="#5b2b73" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M38 252 C46 266 66 268 86 258 C74 274 50 280 38 268 Z" fill="#371848"/>
+  <path d="M52 218 C46 210 40 202 33 198 C28 194 32 186 39 188 C46 190 50 196 54 200 C52 188 49 176 49 168 C49 161 57 161 58 167 L61 186 C60 174 61 162 64 156 C67 151 73 153 72 160 L70 184 C73 174 76 166 80 161 C84 157 88 161 86 168 L78 189 C82 183 88 177 92 177 C97 178 96 185 93 189 C88 197 86 207 84 218 Z"
+        fill="#d8c4a0" stroke="#0b0a0d" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M62 210 C68 214 76 212 82 206 C80 198 82 192 86 188 C80 196 72 200 62 210 Z" fill="#9b8566"/>
+  <path d="M58 202 C64 198 72 198 78 202" fill="none" stroke="#0b0a0d" stroke-width="2" stroke-linecap="round"/>
+  <path d="M51 170 C53 180 55 190 56 198 M66 160 C65 172 64 184 64 194" fill="none" stroke="#a9d0ff" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- eye sigil -->
+  <circle cx="64" cy="136" r="54" fill="url(#merlin-glow)"/>
+  <path d="M64 196 C62 184 66 172 64 162" fill="none" stroke="#9fc0ff" stroke-width="2" stroke-dasharray="3 4" stroke-linecap="round"/>
+  <circle cx="64" cy="136" r="27" fill="none" stroke="#3d7bff" stroke-width="2.5"/>
+  <g stroke="#9fc0ff" stroke-width="2.5" stroke-linecap="round">
+    <path d="M64 100 v-8 M64 172 v8 M28 136 h-8 M100 136 h8 M39 111 l-6 -6 M89 111 l6 -6 M39 161 l-6 6 M89 161 l6 6"/>
+  </g>
+  <path d="M38 136 C48 120 58 116 64 116 C72 116 82 122 90 136 C82 150 72 156 64 156 C56 156 46 150 38 136 Z"
+        fill="#dbe7ff" stroke="#0b0a0d" stroke-width="3.5" stroke-linejoin="round"/>
+  <circle cx="64" cy="136" r="10" fill="#3d7bff" stroke="#0b0a0d" stroke-width="2.5"/>
+  <ellipse cx="64" cy="136" rx="2.6" ry="6" fill="#0b0a0d"/>
+  <circle cx="68" cy="131" r="2" fill="#ffffff"/>
+
+  <rect width="300" height="360" filter="url(#merlin-grain)" opacity="0.08"/>
+</svg>

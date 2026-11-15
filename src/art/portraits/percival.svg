@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360" width="300" height="360">
+  <defs>
+    <pattern id="percival-halftone" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <circle cx="3.5" cy="3.5" r="1.5" fill="#6e530c"/>
+    </pattern>
+    <radialGradient id="percival-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff6c4" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff6c4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="percival-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.9 0"/>
+    </filter>
+  </defs>
+
+  <!-- ochre field -->
+  <rect width="300" height="360" fill="#c9a227"/>
+  <path d="M0 0 L120 0 C96 30 54 54 0 60 Z" fill="url(#percival-halftone)" opacity="0.4"/>
+  <path d="M300 240 C262 250 246 300 250 360 L300 360 Z" fill="url(#percival-halftone)" opacity="0.35"/>
+  <circle cx="150" cy="118" r="104" fill="#d8b947"/>
+  <circle cx="150" cy="118" r="80" fill="none" stroke="#e8cf6c" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+  <g fill="#e0c25a">
+    <circle cx="40" cy="96" r="20"/><circle cx="276" cy="140" r="12"/><circle cx="26" cy="200" r="7"/><circle cx="272" cy="30" r="6"/>
+  </g>
+  <g fill="#a8851b">
+    <circle cx="266" cy="200" r="26"/><circle cx="32" cy="30" r="10"/><circle cx="58" cy="150" r="5"/>
+  </g>
+  <g fill="none" stroke="#efd77a" stroke-width="2.5">
+    <circle cx="74" cy="40" r="12"/><circle cx="286" cy="88" r="8"/><circle cx="18" cy="250" r="10"/>
+  </g>
+  <g fill="#7a5f10">
+    <circle cx="96" cy="22" r="1.8"/><circle cx="20" cy="130" r="1.6"/><circle cx="214" cy="12" r="1.5"/><circle cx="288" cy="250" r="1.8"/><circle cx="70" cy="190" r="1.3"/>
+  </g>
+  <g fill="#f4e3a0">
+    <circle cx="200" cy="40" r="1.6"/><circle cx="50" cy="70" r="1.4"/><circle cx="280" cy="176" r="1.6"/><circle cx="12" cy="168" r="1.2"/>
+  </g>
+
+  <!-- torso: mail -->
+  <path d="M18 362 C20 292 36 238 70 214 C96 198 120 194 150 194 C182 194 208 198 234 214 C266 236 282 290 284 362 Z"
+        fill="#4b5360" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+  <g fill="none" stroke="#2b3038" stroke-width="2" stroke-linecap="round">
+    <path d="M44 300 q6 6 12 0 q6 6 12 0 q6 6 12 0 M40 320 q6 6 12 0 q6 6 12 0 q6 6 12 0 M222 300 q6 6 12 0 q6 6 12 0 M226 320 q6 6 12 0 q6 6 12 0 q6 6 12 0 M36 340 q6 6 12 0 q6 6 12 0 q6 6 12 0"/>
+  </g>
+  <!-- tabard -->
+  <path d="M90 212 C112 204 190 204 212 212 C218 258 214 318 222 362 L80 362 C88 318 84 260 90 212 Z"
+        fill="#efe4c8" stroke="#0b0a0d" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M186 208 C198 208 206 210 212 212 C218 258 214 318 222 362 L196 362 C200 320 196 262 186 208 Z" fill="#c9b78f"/>
+  <path d="M100 340 C112 332 126 344 138 336 M176 300 C184 296 190 304 198 298" fill="none" stroke="#a89567" stroke-width="3" stroke-linecap="round"/>
+  <path d="M141 212 L161 210 L159 254 L206 252 L205 274 L159 276 L162 362 L140 362 L142 277 L95 279 L96 256 L142 255 Z"
+        fill="#b3122e" stroke="#0b0a0d" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M159 256 L204 254 L204 272 L159 274 Z M150 280 L160 278 L162 360 L152 360 Z" fill="#7d0b20"/>
+
+  <!-- pauldrons -->
+  <path d="M18 262 C14 226 42 198 84 198 C104 200 116 214 110 234 C92 238 70 248 52 264 C38 276 22 278 18 262 Z"
+        fill="#8d97a3" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M30 236 C46 220 70 214 96 216 M24 252 C40 238 62 230 86 230" fill="none" stroke="#0b0a0d" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M28 266 C42 252 70 240 108 236 C104 242 92 244 72 254 C56 262 46 272 28 266 Z" fill="#4b5360"/>
+  <path d="M38 222 C50 210 66 206 82 206" fill="none" stroke="#d4dae0" stroke-width="3" stroke-linecap="round"/>
+  <path d="M284 258 C288 224 262 198 220 198 C200 200 188 212 192 232 C210 236 232 246 250 262 C264 274 280 274 284 258 Z"
+        fill="#4b5360" stroke="#0b0a0d" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M206 216 C232 214 256 222 272 236" fill="none" stroke="#0b0a0d" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M214 206 C236 206 256 214 268 226" fill="none" stroke="#8d97a3" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- gorget -->
+  <path d="M110 172 C122 192 180 194 194 172 L204 206 C180 214 122 214 98 206 Z"
+        fill="#4b5360" stroke="#0b0a0d" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M110 200 q5 5 10 0 q5 5 10 0 q5 5 10 0 q5 5 10 0 q5 5 10 0 q5 5 10 0 q5 5 10 0 q5 5 10 0 q5 5 10 0" fill="none" stroke="#0b0a0d" stroke-width="2"/>
+
+  <!-- plume -->
+  <path d="M144 58 C122 50 104 34 98 12 C108 20 118 22 124 20 C114 12 110 4 112 -2 L204 -2 C192 6 186 14 186 24 C200 14 220 12 234 18 C216 24 204 32 198 42 C212 40 226 46 232 58 C210 54 190 56 172 62 C160 66 150 64 144 58 Z"
+        fill="#b3122e" stroke="#0b0a0d" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M172 60 C190 52 210 50 228 54 C212 46 196 44 188 46 C188 36 196 28 210 22 C192 26 180 36 174 48 Z" fill="#6e0a1c"/>
+  <path d="M146 54 C134 44 126 30 124 14 M154 54 C148 38 148 20 154 2 M162 56 C160 40 166 22 178 8 M170 58 C176 44 186 34 202 28" fill="none" stroke="#0b0a0d" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M118 8 C122 26 130 40 142 50" fill="none" stroke="#ec5a6a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- great helm -->
+  <path d="M104 80 C106 64 124 56 150 56 C178 56 194 64 196 80 L198 128 C204 134 204 144 198 150 L200 166 C200 178 184 186 150 188 C116 186 100 178 100 166 L102 120 Z"
+        fill="#8d97a3" stroke="#0b0a0d" stroke-width="6.5" stroke-linejoin="round"/>
+  <path d="M158 57 C182 58 194 66 196 80 L198 128 C204 134 204 144 198 150 L200 166 C200 178 186 184 164 187 C172 150 170 100 158 57 Z" fill="#4b5360"/>
+  <path d="M112 72 C126 64 150 62 172 64" fill="none" stroke="#d4dae0" stroke-width="3" stroke-linecap="round"/>
+  <path d="M110 128 C108 146 110 164 116 176" fill="none" stroke="#c3cad2" stroke-width="3" stroke-linecap="round"/>
+  <path d="M104 84 C130 78 172 78 196 84" fill="none" stroke="#0b0a0d" stroke-width="3" stroke-linecap="round"/>
+  <!-- visor slits with faint light -->
+  <ellipse cx="150" cy="111" rx="46" ry="10" fill="url(#percival-glow)"/>
+  <path d="M106 106 C120 103 132 103 143 104 L143 116 C132 115 120 116 106 119 Z M157 104 C170 103 182 104 195 107 L195 119 C182 116 170 115 157 116 Z" fill="#0b0a0d"/>
+  <path d="M116 111 C124 109 132 109 139 110 M161 110 C170 109 178 110 186 112" fill="none" stroke="#f3e18c" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="128" cy="110" r="2.2" fill="#fff6c4"/><circle cx="172" cy="110" r="2.2" fill="#fff6c4"/>
+  <!-- center rib + cross -->
+  <path d="M144 58 L157 58 L157 186 L144 187 Z" fill="#b4bcc6" stroke="#0b0a0d" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M152 60 L157 58 L157 186 L152 186 Z" fill="#8d97a3"/>
+  <path d="M120 134 L180 132 L180 142 L120 144 Z" fill="#b4bcc6" stroke="#0b0a0d" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="#0b0a0d">
+    <circle cx="176" cy="156" r="2.2"/><circle cx="184" cy="156" r="2.2"/><circle cx="180" cy="162" r="2.2"/><circle cx="176" cy="168" r="2.2"/><circle cx="184" cy="168" r="2.2"/><circle cx="180" cy="150" r="2.2"/>
+    <circle cx="114" cy="92" r="2"/><circle cx="186" cy="92" r="2"/><circle cx="150" cy="96" r="2"/>
+  </g>
+  <path d="M118 96 C124 90 132 90 136 96 C130 98 124 99 118 96 Z" fill="#4b5360" stroke="#0b0a0d" stroke-width="2"/>
+  <path d="M120 160 l8 4 M128 150 l6 -2 M178 72 c4 4 6 10 5 14 M112 92 l6 -3" fill="none" stroke="#0b0a0d" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- notched sword -->
+  <path d="M231 238 L231 48 L240 16 L249 48 L249 92 L244 98 L249 104 L249 162 L245 166 L249 171 L249 238 Z"
+        fill="#c3cad2" stroke="#0b0a0d" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M240 20 L249 48 L249 92 L244 98 L249 104 L249 162 L245 166 L249 171 L249 236 L240 236 Z" fill="#8d97a3"/>
+  <path d="M240 56 L240 226" stroke="#4b5360" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M234 70 L234 120" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M204 234 C220 228 260 228 276 234 L278 244 C262 240 218 240 202 244 Z" fill="#4b5360" stroke="#0b0a0d" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="240" cy="300" r="9" fill="#c9a227" stroke="#0b0a0d" stroke-width="4"/>
+
+  <!-- arm + gauntlet -->
+  <path d="M246 362 C250 330 246 308 232 290 L262 276 C278 300 286 330 284 362 Z"
+        fill="#4b5360" stroke="#0b0a0d" stroke-width="5.5" stroke-linejoin="round"/>
+  <path d="M246 312 C256 306 268 304 278 308" fill="none" stroke="#0b0a0d" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M220 262 C222 250 238 246 256 250 C268 256 268 278 262 290 C250 298 228 296 222 288 C216 280 216 270 220 262 Z"
+        fill="#8d97a3" stroke="#0b0a0d" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M222 266 C232 264 244 264 254 268 M220 276 C232 274 244 274 256 278 M224 286 C234 284 244 284 254 288" fill="none" stroke="#0b0a0d" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M250 252 C262 256 266 272 262 288 C256 270 254 260 250 252 Z" fill="#4b5360"/>
+  <path d="M226 256 C232 252 240 251 246 252" fill="none" stroke="#d4dae0" stroke-width="2.5" stroke-linecap="round"/>
+
+  <rect width="300" height="360" filter="url(#percival-grain)" opacity="0.1"/>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <path id="hero-halo-tick" d="M300 52 L300 40" stroke="#efe4c8" stroke-width="2.5" stroke-linecap="round"/>
+    <path id="hero-halo-tick-long" d="M300 54 L300 26" stroke="#efe4c8" stroke-width="3" stroke-linecap="round"/>
+    <g id="hero-halo-eye">
+      <path d="M286 60 C292 52 308 52 314 60 C308 68 292 68 286 60 Z" fill="#0b0a0d" stroke="#efe4c8" stroke-width="2.2" stroke-linejoin="round"/>
+      <circle cx="300" cy="60" r="3.2" fill="#c6ff3d"/>
+    </g>
+  </defs>
+  <g fill="none">
+    <circle cx="300" cy="230" r="170" stroke="#efe4c8" stroke-width="2.5"/>
+    <circle cx="300" cy="230" r="150" stroke="#efe4c8" stroke-width="1.2" stroke-dasharray="3 7" opacity="0.7"/>
+    <circle cx="300" cy="230" r="196" stroke="#c6ff3d" stroke-width="1" opacity="0.35"/>
+  </g>
+  <g>
+    <use href="#hero-halo-tick" transform="rotate(10 300 230)"/><use href="#hero-halo-tick" transform="rotate(20 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(35 300 230)"/><use href="#hero-halo-tick" transform="rotate(55 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(70 300 230)"/><use href="#hero-halo-tick" transform="rotate(80 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(100 300 230)"/><use href="#hero-halo-tick" transform="rotate(110 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(125 300 230)"/><use href="#hero-halo-tick" transform="rotate(145 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(160 300 230)"/><use href="#hero-halo-tick" transform="rotate(170 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(190 300 230)"/><use href="#hero-halo-tick" transform="rotate(200 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(215 300 230)"/><use href="#hero-halo-tick" transform="rotate(235 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(250 300 230)"/><use href="#hero-halo-tick" transform="rotate(260 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(280 300 230)"/><use href="#hero-halo-tick" transform="rotate(290 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(305 300 230)"/><use href="#hero-halo-tick" transform="rotate(325 300 230)"/>
+    <use href="#hero-halo-tick" transform="rotate(340 300 230)"/><use href="#hero-halo-tick" transform="rotate(350 300 230)"/>
+    <use href="#hero-halo-tick-long" transform="rotate(0 300 230)"/><use href="#hero-halo-tick-long" transform="rotate(90 300 230)"/>
+    <use href="#hero-halo-tick-long" transform="rotate(180 300 230)"/><use href="#hero-halo-tick-long" transform="rotate(270 300 230)"/>
+    <use href="#hero-halo-eye" transform="rotate(45 300 230)"/><use href="#hero-halo-eye" transform="rotate(135 300 230)"/>
+    <use href="#hero-halo-eye" transform="rotate(225 300 230)"/><use href="#hero-halo-eye" transform="rotate(315 300 230)"/>
+  </g>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360" width="300" height="360">
+<defs>
+<pattern id="minion-halftone" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+<circle cx="3.5" cy="3.5" r="1.6" fill="#2a1410"/>
+</pattern>
+<filter id="minion-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="5"/>
+<feColorMatrix type="saturate" values="0"/>
+</filter>
+<radialGradient id="minion-glow" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#fff4d6" stop-opacity="0.8"/>
+<stop offset="1" stop-color="#e8dcc0" stop-opacity="0"/>
+</radialGradient>
+</defs>
+<rect width="300" height="360" fill="#d0642a"/>
+<path d="M0 0 H150 C110 30 60 40 0 110 Z" fill="url(#minion-halftone)" opacity="0.4"/>
+<path d="M300 200 C260 230 250 300 262 360 H300 Z" fill="url(#minion-halftone)" opacity="0.45"/>
+<g fill="#e8925a" opacity="0.75">
+<circle cx="40" cy="60" r="16"/><circle cx="196" cy="24" r="8"/><circle cx="18" cy="190" r="10"/><circle cx="286" cy="180" r="14"/><circle cx="86" cy="20" r="5"/>
+</g>
+<g fill="none" stroke="#8e2a1c" stroke-width="2.5" opacity="0.8">
+<circle cx="24" cy="130" r="14"/><circle cx="120" cy="24" r="10"/><circle cx="280" cy="236" r="9"/>
+</g>
+<g fill="#8e2a1c">
+<circle cx="64" cy="100" r="3"/><circle cx="160" cy="14" r="2.5"/><circle cx="14" cy="240" r="2.5"/><circle cx="292" cy="140" r="3"/><circle cx="54" cy="30" r="2"/><circle cx="210" cy="10" r="2"/>
+</g>
+<g stroke="#0b0a0d" stroke-linejoin="round" stroke-linecap="round">
+<!-- hunched cloak + hood -->
+<path d="M150 34 C100 34 70 74 66 122 C62 160 46 186 26 206 C10 236 2 300 -4 364 H304 C298 300 290 238 274 206 C254 186 238 160 234 122 C230 74 200 34 150 34 Z" fill="#8e2a1c" stroke-width="7"/>
+<path d="M178 40 C214 54 228 90 226 126 C224 168 246 196 266 214 C282 250 290 306 292 364 H304 C298 300 290 238 274 206 C254 186 238 160 234 122 C230 74 200 34 178 40 Z" fill="#2a1410" stroke-width="0"/>
+<path d="M30 230 C20 270 16 320 16 364 L60 364 C52 320 50 280 60 246 Z" fill="#2a1410" stroke-width="0" opacity="0.6"/>
+<path d="M100 222 C96 270 98 320 104 364 M196 224 C206 270 206 320 200 364 M150 238 L152 364" fill="none" stroke-width="3"/>
+<path d="M108 52 C96 66 90 80 88 96 M190 50 C200 62 208 78 210 94" fill="none" stroke-width="2.5"/>
+<path d="M100 300 l8 10 l-10 4 z M176 330 l10 6 l-9 7 z M58 280 l6 9 l-9 2 z" fill="#d0642a" stroke-width="2"/>
+<!-- face cavity, ragged rim -->
+<path d="M150 64 C120 62 98 80 90 100 L84 112 L92 118 L84 132 L90 146 L84 160 C88 196 116 226 150 228 C186 228 212 200 216 162 L210 150 L218 138 L210 124 L216 110 L208 98 C198 76 178 62 150 64 Z" fill="#2a1410" stroke-width="6"/>
+<!-- ragged ears through hood -->
+<path d="M94 128 C72 116 48 100 18 92 C28 104 34 112 30 120 L44 122 L36 134 L52 134 C66 142 80 150 98 154 Z" fill="#9a8f6e" stroke-width="5"/>
+<path d="M204 132 C210 104 214 72 222 30 C228 46 230 56 226 64 L236 70 L226 80 L234 88 C228 104 220 124 210 148 Z" fill="#9a8f6e" stroke-width="5"/>
+<path d="M214 120 C218 100 220 80 222 52" fill="none" stroke-width="2.5"/>
+<path d="M88 136 C70 128 54 118 36 110" fill="none" stroke-width="2.5"/>
+<!-- face -->
+<path d="M150 90 C120 90 102 112 100 140 C98 176 118 208 150 212 C184 210 204 178 202 142 C200 112 180 90 150 90 Z" fill="#9a8f6e" stroke-width="5"/>
+<path d="M170 96 C188 108 194 136 190 166 C186 190 172 206 156 211 C186 208 204 178 202 142 C200 114 188 98 170 96 Z" fill="#5e5238" stroke-width="0"/>
+<path d="M102 126 C116 104 132 96 150 96 C170 96 188 106 200 128 C186 116 170 110 150 110 C130 110 114 116 102 126 Z" fill="#2a1410" stroke-width="0"/>
+<!-- eye glow + blank eyes -->
+<circle cx="126" cy="132" r="22" fill="url(#minion-glow)" stroke-width="0"/>
+<circle cx="174" cy="132" r="22" fill="url(#minion-glow)" stroke-width="0"/>
+<path d="M110 124 L140 136 M190 124 L160 136" fill="none" stroke-width="6"/>
+<path d="M112 128 C120 126 134 130 141 138 C132 144 118 142 112 128 Z" fill="#fff4d6" stroke-width="3"/>
+<path d="M188 128 C180 126 166 130 159 138 C168 144 182 142 188 128 Z" fill="#fff4d6" stroke-width="3"/>
+<!-- snout -->
+<path d="M144 142 C146 152 140 158 142 162 C146 164 154 164 158 162 C160 158 154 152 156 142" fill="none" stroke-width="2.5"/>
+<path d="M145 158 l3 3 M155 158 l-3 3" fill="none" stroke-width="2.5"/>
+<path d="M112 150 C110 160 112 168 118 172 M188 150 C190 160 188 168 182 172 M124 148 C130 150 134 152 136 156" fill="none" stroke-width="2.5"/>
+<!-- grin -->
+<path d="M102 156 C124 168 176 168 198 154 C192 182 174 202 150 202 C126 202 108 184 102 156 Z" fill="#2a1410" stroke-width="5"/>
+<path d="M106 158 L110 171 L115 162 L119 175 L124 164 L128 178 L133 165 L138 180 L143 166 L148 181 L153 166 L158 180 L163 165 L168 178 L173 164 L178 175 L183 162 L188 171 L194 157 C176 168 124 168 106 158 Z" fill="#e8dcc0" stroke-width="2"/>
+<path d="M110 174 L115 168 L119 182 L124 174 L128 188 L133 180 L138 193 L143 184 L148 197 L152 186 L156 197 L161 184 L165 193 L170 180 L174 188 L179 174 L183 182 L188 168 L191 174 C184 190 170 200 150 200 C130 200 116 190 110 174 Z" fill="#e8dcc0" stroke-width="2"/>
+<path d="M96 152 C98 156 100 158 104 158 M204 150 C202 154 200 156 196 156" fill="none" stroke-width="3"/>
+<path d="M150 202 C150 210 148 214 146 216" fill="none" stroke="#8e2a1c" stroke-width="3"/>
+<g transform="translate(12 0)">
+<path d="M190 300 C196 262 214 228 232 206 L258 222 C244 248 232 284 228 322 Z" fill="#8e2a1c" stroke-width="6"/>
+<path d="M240 214 L258 222 C244 248 232 284 228 322 L214 316 C222 278 230 246 240 214 Z" fill="#2a1410" stroke-width="0"/>
+<path d="M226 152 L238 154 L244 214 L232 216 Z" fill="#2a1410" stroke-width="5"/>
+<path d="M216 152 L234 46 C254 36 280 38 298 50 L282 160 C262 158 236 154 216 152 Z" fill="#e8dcc0" stroke-width="6"/>
+<path d="M276 46 C286 46 292 48 298 50 L282 160 C274 160 268 158 262 158 C272 122 278 84 276 46 Z" fill="#8e2a1c" stroke-width="0" opacity="0.85"/>
+<path d="M298 50 L292 74 L286 78 L288 92 L282 116 L276 120 L278 134 L282 160" fill="none" stroke-width="3"/>
+<path d="M230 82 C238 76 250 80 254 92 C258 104 246 108 240 102 C232 96 226 90 230 82 Z M222 128 C230 120 244 124 248 136 C250 146 236 148 228 144 C222 140 220 134 222 128 Z M260 60 C266 56 272 62 270 68 C266 72 258 68 260 60 Z" fill="#8e2a1c" stroke-width="0"/>
+<circle cx="248" cy="60" r="7" fill="#d0642a" stroke-width="3"/>
+<g fill="#2a1410" stroke-width="0"><circle cx="258" cy="96" r="3"/><circle cx="236" cy="104" r="2"/><circle cx="264" cy="134" r="2.5"/><circle cx="226" cy="140" r="1.8"/></g>
+<path d="M266 156 C266 168 264 176 262 180 C260 176 260 166 262 157 Z" fill="#8e2a1c" stroke-width="2"/>
+<path d="M216 186 C224 176 248 174 258 182 C266 192 264 208 256 216 C244 224 224 222 216 212 C212 204 212 194 216 186 Z" fill="#9a8f6e" stroke-width="5"/>
+<path d="M216 194 C228 190 244 190 260 194 M216 204 C228 202 244 202 260 206" fill="none" stroke-width="2.5"/>
+<path d="M216 186 L206 180 L214 194 Z M216 196 L204 194 L215 204 Z M216 206 L205 208 L217 213 Z" fill="#e8dcc0" stroke-width="2"/>
+</g>
+</g>
+<rect width="300" height="360" filter="url(#minion-grain)" opacity="0.1" style="mix-blend-mode:multiply"/>
+</svg>

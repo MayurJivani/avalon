@@ -1,0 +1,8 @@
+node_modules
+dist
+data
+shots
+core.*
+.git
+.conclave
+*.log

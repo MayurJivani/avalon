@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 360" width="300" height="360">
+<defs>
+<pattern id="oberon-halftone" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-24)">
+<circle cx="3.5" cy="3.5" r="1.6" fill="#3a1f4a"/>
+</pattern>
+<filter id="oberon-grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="11"/>
+<feColorMatrix type="saturate" values="0"/>
+</filter>
+<radialGradient id="oberon-glow" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0" stop-color="#eaff8a" stop-opacity="0.75"/>
+<stop offset="1" stop-color="#b6e33a" stop-opacity="0"/>
+</radialGradient>
+<g id="oberon-moth" stroke="#0b0a0d" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round">
+<path d="M-1 -7 C-3 -12 -7 -14 -10 -13 M1 -7 C3 -12 7 -14 10 -13" fill="none" stroke-width="1.6"/>
+<path d="M0 1 C-5 7 -11 13 -11 6 C-10 2 -5 1 0 1 C5 1 10 2 11 6 C11 13 5 7 0 1 Z" fill="#3a1f4a"/>
+<path d="M0 -1 C-5 -11 -18 -15 -16 -3 C-15 3 -6 3 0 1 C6 3 15 3 16 -3 C18 -15 5 -11 0 -1 Z" fill="#d9d2b8"/>
+<circle cx="-8" cy="-4" r="2.4" fill="#3a1f4a" stroke-width="1.4"/><circle cx="8" cy="-4" r="2.4" fill="#3a1f4a" stroke-width="1.4"/>
+<path d="M0 -6 L0 7" stroke-width="3.5"/>
+</g>
+</defs>
+<rect width="300" height="360" fill="#b6e33a"/>
+<path d="M0 220 C40 240 60 300 50 360 H0 Z" fill="url(#oberon-halftone)" opacity="0.45"/>
+<path d="M300 0 V110 C262 96 236 60 230 0 Z" fill="url(#oberon-halftone)" opacity="0.45"/>
+<g fill="#d8f27a" opacity="0.8">
+<circle cx="30" cy="40" r="12"/><circle cx="272" cy="214" r="18"/><circle cx="20" cy="170" r="7"/><circle cx="286" cy="300" r="6"/><circle cx="252" cy="140" r="5"/>
+</g>
+<g fill="none" stroke="#6f8f1c" stroke-width="2.5" opacity="0.7">
+<circle cx="40" cy="250" r="16"/><circle cx="268" cy="40" r="10"/><circle cx="282" cy="250" r="8"/>
+</g>
+<g fill="#6f8f1c">
+<circle cx="60" cy="20" r="2.5"/><circle cx="14" cy="110" r="3"/><circle cx="292" cy="170" r="2.5"/><circle cx="250" cy="300" r="3"/><circle cx="36" cy="320" r="2"/><circle cx="230" cy="22" r="2"/>
+</g>
+<!-- isolating halo -->
+<path d="M150 22 C206 20 250 66 250 124 C250 180 208 226 150 226 C92 228 50 182 50 124 C50 66 94 24 150 22 Z" fill="#3a1f4a" stroke="#0b0a0d" stroke-width="6"/>
+<path d="M150 40 C198 38 232 78 232 124 C232 172 196 208 150 208 C102 210 68 172 68 124 C68 78 102 42 150 40 Z" fill="none" stroke="#6f8f1c" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+<circle cx="150" cy="120" r="70" fill="url(#oberon-glow)" opacity="0.5"/>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+<!-- antlers: ink under, bone over -->
+<g stroke="#0b0a0d" stroke-width="15">
+<path id="oberon-antler-l" d="M132 84 C118 64 106 52 98 34 C93 22 86 14 78 6 M106 52 C92 52 78 46 66 32 M98 34 C90 26 88 16 90 4 M122 70 C102 76 82 72 64 78 C50 82 40 76 30 64 M82 74 C76 88 64 94 50 96 M48 80 C40 92 28 98 14 98"/>
+<path d="M168 84 C184 66 196 54 202 36 C206 24 214 14 224 8 M194 54 C208 56 222 50 236 38 M202 36 C210 28 212 18 208 6 M178 70 C198 78 220 74 238 82 C252 86 262 80 272 68 M218 76 C224 90 236 96 250 98 M252 84 C260 96 272 102 288 100"/>
+</g>
+<g stroke="#d9d2b8" stroke-width="8">
+<path d="M132 84 C118 64 106 52 98 34 C93 22 86 14 78 6 M106 52 C92 52 78 46 66 32 M98 34 C90 26 88 16 90 4 M122 70 C102 76 82 72 64 78 C50 82 40 76 30 64 M82 74 C76 88 64 94 50 96 M48 80 C40 92 28 98 14 98"/>
+<path d="M168 84 C184 66 196 54 202 36 C206 24 214 14 224 8 M194 54 C208 56 222 50 236 38 M202 36 C210 28 212 18 208 6 M178 70 C198 78 220 74 238 82 C252 86 262 80 272 68 M218 76 C224 90 236 96 250 98 M252 84 C260 96 272 102 288 100"/>
+</g>
+<!-- thorn vines -->
+<g stroke="#0b0a0d" stroke-width="6"><path d="M128 80 C112 74 116 62 104 58 C92 54 96 44 86 40 M118 72 C100 82 90 70 76 76 C62 82 56 74 44 76 M172 80 C188 76 186 62 198 58 C210 56 206 44 216 40 M182 72 C200 82 212 70 226 78 C240 84 248 76 262 78"/></g>
+<g stroke="#6f8f1c" stroke-width="2.5"><path d="M128 80 C112 74 116 62 104 58 C92 54 96 44 86 40 M118 72 C100 82 90 70 76 76 C62 82 56 74 44 76 M172 80 C188 76 186 62 198 58 C210 56 206 44 216 40 M182 72 C200 82 212 70 226 78 C240 84 248 76 262 78"/></g>
+</g>
+<g fill="#0b0a0d"><path d="M112 66 l-7 -4 l5 7z"/><path d="M98 52 l-3 -7 l6 5z"/><path d="M92 72 l-2 -8 l6 6z"/><path d="M60 78 l-4 7 l7 -3z"/><path d="M190 64 l7 -4 l-5 7z"/><path d="M206 50 l3 -7 l-6 5z"/><path d="M212 74 l1 -8 l-6 6z"/><path d="M244 80 l4 7 l-7 -3z"/></g>
+<g stroke="#0b0a0d" stroke-linejoin="round" stroke-linecap="round">
+<!-- body -->
+<path d="M14 362 C22 300 58 266 102 250 C120 244 132 232 138 214 L162 214 C168 232 180 244 198 250 C242 266 278 300 286 362 Z" fill="#3a1f4a" stroke-width="6"/>
+<path d="M150 260 C140 300 138 334 140 362 M150 260 C160 300 162 334 160 362 M70 290 C90 300 98 320 96 362 M230 290 C210 300 202 320 204 362" fill="none" stroke="#6f8f1c" stroke-width="3"/>
+<path d="M22 362 C30 310 56 280 90 266 C70 294 64 330 66 362 Z M278 362 C270 310 244 280 210 266 C230 294 236 330 234 362 Z" fill="#0b0a0d" stroke-width="0"/>
+<!-- leaf collar -->
+<path d="M150 268 C124 262 104 252 84 248 L66 196 L96 226 L94 172 L118 214 L124 180 L140 226 L150 230 L160 226 L176 180 L182 214 L206 172 L204 226 L234 196 L216 248 C196 252 176 262 150 268 Z" fill="#6f8f1c" stroke-width="5"/>
+<path d="M84 248 L72 208 L100 236 Z M216 248 L228 208 L200 236 Z M118 214 L106 196 L112 238 Z M182 214 L194 196 L188 238 Z" fill="#0b0a0d" stroke-width="0" opacity="0.55"/>
+<path d="M140 248 C146 244 154 244 160 248 C158 258 154 264 150 266 C146 264 142 258 140 248 Z" fill="#eaff8a" stroke-width="3"/>
+<!-- neck -->
+<path d="M138 196 C140 212 138 228 134 240 C144 246 156 246 166 240 C162 228 160 212 162 196 Z" fill="#d9d2b8" stroke-width="5"/>
+<path d="M152 204 C154 220 156 232 162 240 L166 240 C162 228 160 212 162 196 Z" fill="#3a1f4a" stroke-width="0" opacity="0.4"/>
+<!-- ears -->
+<path d="M120 116 C102 108 84 96 62 90 C74 108 94 128 120 140 Z" fill="#d9d2b8" stroke-width="5"/>
+<path d="M180 116 C198 108 216 96 238 90 C226 108 206 128 180 140 Z" fill="#d9d2b8" stroke-width="5"/>
+<path d="M114 120 C100 114 88 106 76 100 C88 114 102 124 116 132 Z M186 120 C200 114 212 106 224 100 C212 114 198 124 184 132 Z" fill="#3a1f4a" stroke-width="0" opacity="0.5"/>
+<!-- long face -->
+<path d="M150 72 C128 72 116 88 116 112 C116 144 122 174 134 198 C140 210 146 218 150 218 C154 218 160 210 166 198 C178 174 184 144 184 112 C184 88 172 72 150 72 Z" fill="#d9d2b8" stroke-width="6"/>
+<path d="M160 76 C174 86 178 104 176 130 C174 160 166 190 152 216 C158 214 162 208 166 198 C178 174 184 144 184 112 C184 90 174 78 160 76 Z" fill="#3a1f4a" stroke-width="0" opacity="0.38"/>
+<path d="M122 150 C128 160 132 172 136 184 C130 176 124 166 122 150 Z M178 150 C172 160 168 172 164 184 C170 176 176 166 178 150 Z" fill="#3a1f4a" stroke-width="2"/>
+<!-- eyes: six -->
+<path d="M126 128 C132 120 142 120 146 128 C140 134 132 134 126 128 Z M154 128 C158 120 168 120 174 128 C168 134 160 134 154 128 Z" fill="#0b0a0d" stroke-width="3"/>
+<path d="M138 108 C141 103 147 103 148 108 C145 112 140 112 138 108 Z M152 108 C153 103 159 103 162 108 C160 112 155 112 152 108 Z" fill="#0b0a0d" stroke-width="2.5"/>
+<path d="M121 112 C123 108 128 108 130 112 C128 115 123 115 121 112 Z M170 112 C172 108 177 108 179 112 C177 115 172 115 170 112 Z" fill="#0b0a0d" stroke-width="2.5"/>
+<g fill="#eaff8a" stroke-width="0">
+<circle cx="136" cy="127.5" r="3.6"/><circle cx="164" cy="127.5" r="3.6"/><circle cx="143" cy="108" r="2"/><circle cx="157" cy="108" r="2"/><circle cx="125.5" cy="111.8" r="1.6"/><circle cx="174.5" cy="111.8" r="1.6"/>
+</g>
+<g fill="#eaff8a" stroke-width="0" opacity="0.35"><circle cx="136" cy="127.5" r="9"/><circle cx="164" cy="127.5" r="9"/></g>
+<g fill="#fff" stroke-width="0"><circle cx="135" cy="126.5" r="1.2"/><circle cx="163" cy="126.5" r="1.2"/></g>
+<!-- nose, sewn smile -->
+<path d="M145 160 C143 166 144 170 147 170 Z M155 160 C157 166 156 170 153 170 Z" fill="#0b0a0d" stroke-width="2"/>
+<path d="M150 136 C149 146 149 154 150 158" fill="none" stroke="#3a1f4a" stroke-width="2" opacity="0.6"/>
+<path d="M132 184 C140 190 160 190 170 180" fill="none" stroke-width="3"/>
+<path d="M138 182 L140 192 M145 184 L146 194 M152 185 L152 195 M159 184 L158 194 M165 181 L164 190" fill="none" stroke-width="2"/>
+<path d="M146 202 C148 204 152 204 154 202" fill="none" stroke-width="2"/>
+<!-- thorn circlet -->
+<path d="M114 98 C128 88 172 88 186 98" fill="none" stroke-width="9"/>
+<path d="M114 98 C128 88 172 88 186 98" fill="none" stroke="#3a1f4a" stroke-width="4"/>
+<g fill="#0b0a0d" stroke-width="0"><path d="M124 92 l-2 -8 l5 6z"/><path d="M140 89 l0 -8 l4 7z"/><path d="M160 89 l2 -8 l2 8z"/><path d="M176 92 l4 -7 l-1 8z"/></g>
+</g>
+<!-- crown of moths -->
+<use xlink:href="#oberon-moth" href="#oberon-moth" transform="translate(150 66) scale(1.6)"/>
+<use xlink:href="#oberon-moth" href="#oberon-moth" transform="translate(120 80) rotate(-28) scale(1.2)"/>
+<use xlink:href="#oberon-moth" href="#oberon-moth" transform="translate(180 80) rotate(26) scale(1.2)"/>
+<use xlink:href="#oberon-moth" href="#oberon-moth" transform="translate(104 34) rotate(-50) scale(0.7)"/>
+<use xlink:href="#oberon-moth" href="#oberon-moth" transform="translate(236 64) rotate(20) scale(0.65)"/>
+<use xlink:href="#oberon-moth" href="#oberon-moth" transform="translate(56 140) rotate(-12) scale(0.6)"/>
+<rect width="300" height="360" filter="url(#oberon-grain)" opacity="0.09" style="mix-blend-mode:multiply"/>
+</svg>

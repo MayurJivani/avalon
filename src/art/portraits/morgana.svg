@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360">
+  <defs>
+    <pattern id="morgana-halftone" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+      <circle cx="3.5" cy="3.5" r="1.6" fill="#3d1547"/>
+    </pattern>
+    <radialGradient id="morgana-glow">
+      <stop offset="0" stop-color="#b6e33a" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#b6e33a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="morgana-grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7"/>
+      <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0"/>
+    </filter>
+  </defs>
+
+  <!-- field -->
+  <rect width="300" height="360" fill="#6b2a7a"/>
+  <path d="M300 0H140C190 40 250 60 300 140Z" fill="#7d3590"/>
+  <path d="M0 120C50 160 60 260 20 360H0Z" fill="#3d1547" opacity=".6"/>
+  <path d="M0 0H110C80 40 40 70 0 80Z" fill="url(#morgana-halftone)" opacity=".8"/>
+  <path d="M300 200C260 220 250 300 280 360H300Z" fill="url(#morgana-halftone)" opacity=".8"/>
+  <g fill="none" stroke="#b04fb8" stroke-width="2.5">
+    <circle cx="258" cy="56" r="18"/>
+    <circle cx="36" cy="150" r="10"/>
+    <circle cx="276" cy="232" r="7"/>
+  </g>
+  <g fill="#b04fb8" opacity=".75">
+    <circle cx="48" cy="40" r="9"/>
+    <circle cx="232" cy="110" r="4"/>
+    <circle cx="20" cy="220" r="5"/>
+    <circle cx="282" cy="150" r="3"/>
+    <circle cx="200" cy="22" r="2.5"/>
+    <circle cx="90" cy="18" r="3"/>
+  </g>
+  <g fill="#3d1547">
+    <circle cx="270" cy="110" r="12"/>
+    <circle cx="24" cy="96" r="6"/>
+    <circle cx="100" cy="46" r="3"/>
+    <circle cx="282" cy="300" r="4"/>
+  </g>
+
+  <g stroke="#0b0a0d" stroke-linejoin="round" stroke-linecap="round">
+    <!-- hair back mass, spilling like smoke -->
+    <path d="M150 34C108 32 86 62 84 100C82 140 78 170 62 196C44 224 22 236 18 266C14 292 34 300 26 322C20 340 30 356 40 366L262 366C276 346 286 326 274 306C264 288 284 272 280 248C276 222 248 210 232 186C220 164 218 134 216 102C214 62 192 34 150 34Z" fill="#0b0a0d" stroke-width="6"/>
+    <path d="M28 272C14 256 20 236 38 236C50 236 52 252 42 254" fill="none" stroke="#3a2a40" stroke-width="3"/>
+    <path d="M276 262C292 250 288 228 270 228C258 230 260 244 268 244" fill="none" stroke="#3a2a40" stroke-width="3"/>
+    <path d="M30 326C16 316 18 298 32 300" fill="none" stroke="#3a2a40" stroke-width="3"/>
+    <path d="M96 90C92 130 88 170 66 204M206 96C210 130 214 164 236 196" fill="none" stroke="#3a2a40" stroke-width="3"/>
+    <!-- smoke wisps -->
+    <path d="M24 300C8 296 2 280 10 270C16 262 26 266 24 274" fill="none" stroke-width="4"/>
+    <path d="M280 300C296 304 300 320 290 328C284 332 276 328 280 322" fill="none" stroke-width="4"/>
+
+    <!-- gown & collar -->
+    <path d="M30 366C40 300 70 250 118 226L150 238L182 226C230 250 262 300 272 366Z" fill="#1d1222" stroke-width="6"/>
+    <path d="M118 226C108 206 96 196 80 194C92 214 98 234 108 252Z" fill="#3d1547" stroke-width="4"/>
+    <path d="M182 226C192 206 204 196 220 194C208 214 202 234 192 252Z" fill="#3d1547" stroke-width="4"/>
+    <path d="M150 238L136 290L150 330L164 290Z" fill="#b04fb8" stroke-width="3"/>
+    <path d="M150 238L150 330L164 290Z" fill="#6b2a7a" stroke="none"/>
+    <path d="M60 300C76 280 96 266 116 260M240 300C224 280 204 266 184 260" fill="none" stroke="#b04fb8" stroke-width="2.5"/>
+
+    <!-- neck -->
+    <path d="M134 150C136 180 132 206 122 228C140 242 160 242 178 228C168 206 164 180 166 150Z" fill="#e9d9df" stroke-width="4"/>
+    <path d="M134 150C136 180 132 206 122 228C132 234 140 236 146 236C142 210 144 180 152 160Z" fill="#b99fb3" stroke="none"/>
+    <path d="M134 150C136 180 132 206 122 228M166 150C164 180 168 206 178 228" fill="none" stroke-width="4"/>
+
+    <!-- face -->
+    <path d="M150 62C174 62 188 80 188 106C188 130 178 148 162 162C156 167 153 172 150 176C147 172 144 167 138 162C122 148 112 130 112 106C112 80 126 62 150 62Z" fill="#e9d9df" stroke-width="5"/>
+    <path d="M124 74C114 86 112 104 114 120C118 138 128 152 142 164C146 168 148 172 150 176C150 160 140 152 132 140C124 126 122 110 126 96C128 88 130 80 124 74Z" fill="#b99fb3" stroke="none"/>
+    <path d="M150 62C174 62 188 80 188 106C188 130 178 148 162 162C156 167 153 172 150 176C147 172 144 167 138 162C122 148 112 130 112 106C112 80 126 62 150 62Z" fill="none" stroke-width="5"/>
+    <!-- cheekbones -->
+    <path d="M122 126C128 134 134 138 138 146M178 126C172 134 166 138 162 146" fill="none" stroke-width="2"/>
+    <!-- brows -->
+    <path d="M120 92C128 86 138 88 146 96L144 98C136 94 128 92 120 92Z" fill="#0b0a0d" stroke-width="2.5"/>
+    <path d="M180 92C172 86 162 88 154 96L156 98C164 94 172 92 180 92Z" fill="#0b0a0d" stroke-width="2.5"/>
+    <!-- eye glow -->
+    <ellipse cx="150" cy="106" rx="42" ry="18" fill="url(#morgana-glow)" stroke="none" opacity=".7"/>
+    <!-- eyes -->
+    <path d="M122 100C130 101 140 102 145 107C138 111 128 110 122 100Z" fill="#b6e33a" stroke-width="2.5"/>
+    <path d="M178 100C170 101 160 102 155 107C162 111 172 110 178 100Z" fill="#b6e33a" stroke-width="2.5"/>
+    <path d="M136 103L136 109M164 103L164 109" fill="none" stroke-width="2.5"/>
+    <path d="M120 98L116 94M180 98L184 94" fill="none" stroke-width="2.5"/>
+    <!-- nose + lips -->
+    <path d="M151 108C152 122 153 130 148 136" fill="none" stroke-width="2"/>
+    <path d="M138 148C144 145 148 146 150 147C152 146 156 145 162 148C156 154 144 154 138 148Z" fill="#3d1547" stroke-width="2.5"/>
+    <path d="M140 148C146 149 154 149 160 148" fill="none" stroke-width="1.8"/>
+
+    <!-- hair front curtains -->
+    <path d="M150 50C126 50 108 66 104 92C100 120 104 150 96 176C92 186 86 196 80 202C100 196 112 178 116 156C120 130 116 104 124 86C130 74 140 68 150 66C160 68 170 74 176 86C184 104 180 130 184 156C188 178 200 196 220 202C214 196 208 186 204 176C196 150 200 120 196 92C192 66 174 50 150 50Z" fill="#0b0a0d" stroke-width="5"/>
+    <path d="M118 74C110 96 112 130 104 160M182 74C190 96 188 130 196 160" fill="none" stroke="#3a2a40" stroke-width="2.5"/>
+
+    <!-- crescent crown -->
+    <path d="M114 74C128 66 172 66 186 74L184 80C170 74 130 74 116 80Z" fill="#efe4c8" stroke-width="3"/>
+    <path d="M116 18C114 56 132 68 150 68C168 68 186 56 184 18C176 44 164 54 150 54C136 54 124 44 116 18Z" fill="#efe4c8" stroke-width="4.5"/>
+    <path d="M150 68C168 68 186 56 184 18C180 40 170 52 158 58C156 62 152 66 150 68Z" fill="#c4b48e" stroke="none"/>
+    <path d="M116 18C114 56 132 68 150 68C168 68 186 56 184 18C176 44 164 54 150 54C136 54 124 44 116 18Z" fill="none" stroke-width="4.5"/>
+    <path d="M150 58L155 64L150 72L145 64Z" fill="#b04fb8" stroke-width="2.5"/>
+
+    <!-- serpent: tube made of outline + body + belly strokes -->
+    <g fill="none">
+      <path d="M60 252C70 226 96 214 126 220C156 226 186 236 212 220C236 206 246 180 236 160C230 148 232 136 242 128" stroke-width="24"/>
+      <path d="M60 252C70 226 96 214 126 220C156 226 186 236 212 220C236 206 246 180 236 160C230 148 232 136 242 128" stroke="#3e6b3a" stroke-width="15"/>
+      <path d="M62 256C74 234 96 226 124 230C156 236 188 246 216 230C242 214 252 186 244 162" stroke="#7fa44a" stroke-width="4"/>
+      <path d="M90 222L96 230M118 218L120 228M148 224L146 234M176 230L172 240M204 222L198 232M228 204L220 210M240 178L232 180" stroke-width="2"/>
+    </g>
+    <!-- tail tip -->
+    <path d="M54 248C48 262 40 270 30 272C40 262 46 252 50 238Z" fill="#3e6b3a" stroke-width="3"/>
+    <!-- serpent head -->
+    <path d="M232 132C236 116 250 108 266 112C278 116 280 126 270 132C262 138 248 142 238 140Z" fill="#3e6b3a" stroke-width="4"/>
+    <path d="M238 140C248 142 262 138 270 132C266 138 254 144 240 144Z" fill="#7fa44a" stroke-width="2"/>
+    <path d="M254 118C258 116 262 116 264 120C260 122 256 122 254 118Z" fill="#efe4c8" stroke-width="2"/>
+    <path d="M259 117L259 121" stroke-width="1.5"/>
+    <path d="M276 128L286 126M286 126L292 120M286 126L292 130" fill="none" stroke="#b04fb8" stroke-width="2.5"/>
+
+    <!-- mirror -->
+    <path d="M70 296L74 330" fill="none" stroke-width="13"/>
+    <path d="M70 296L74 330" fill="none" stroke="#c4b48e" stroke-width="7"/>
+    <path d="M64 226L70 216L76 226C94 230 102 248 100 266C98 286 86 300 70 302C54 300 42 286 42 266C42 246 50 230 64 226Z" fill="#efe4c8" stroke-width="5"/>
+    <path d="M70 232C84 234 92 248 92 264C92 280 82 292 70 294C58 292 50 280 50 264C50 248 58 234 70 232Z" fill="#3d1547" stroke-width="2.5"/>
+    <path d="M70 294C82 292 92 280 92 264C92 254 88 246 82 240C86 256 82 278 70 294Z" fill="#24102c" stroke="none"/>
+    <path d="M57 276C55 260 60 246 70 240" fill="none" stroke="#b04fb8" stroke-width="3.5"/>
+    <path d="M62 282L66 278" fill="none" stroke="#efe4c8" stroke-width="2.5"/>
+    <path d="M70 302L64 310L76 310Z" fill="#c4b48e" stroke-width="3"/>
+    <!-- hand -->
+    <path d="M58 318C62 308 76 304 86 310C92 316 92 328 86 336C78 344 64 344 58 336C54 330 54 324 58 318Z" fill="#e9d9df" stroke-width="4"/>
+    <path d="M58 318C62 312 68 310 72 312C70 320 70 330 74 342C66 342 60 340 58 336C54 330 54 324 58 318Z" fill="#b99fb3" stroke="none"/>
+    <path d="M58 318C62 308 76 304 86 310C92 316 92 328 86 336C78 344 64 344 58 336C54 330 54 324 58 318Z" fill="none" stroke-width="4"/>
+    <path d="M72 316L88 318M70 326L88 328" fill="none" stroke-width="2"/>
+    <path d="M88 312L96 306L92 316ZM90 322L100 318L94 328Z" fill="#0b0a0d" stroke-width="1.5"/>
+    <!-- sleeve -->
+    <path d="M50 330C58 346 80 350 92 336L104 366L40 366Z" fill="#1d1222" stroke-width="5"/>
+  </g>
+
+  <rect width="300" height="360" filter="url(#morgana-grain)" opacity=".2"/>
+</svg>
