@@ -5,6 +5,7 @@ import { play } from '../sound.ts';
 import { Ransom } from '../ui/Ransom.tsx';
 import { Glyphs, SoundToggle, Barcode } from '../ui/bits.tsx';
 import { GLYPHS } from '../ui/Icons.tsx';
+import { RulesButton } from '../ui/Rules.tsx';
 import hero from '../art/hero.svg';
 import halo from '../art/hero-halo.svg';
 
@@ -52,6 +53,7 @@ export function Landing() {
         </div>
         <div className="flex items-center gap-4">
           <span className="label hidden md:inline">(Tintagel, Cornwall)</span>
+          <RulesButton />
           <SoundToggle />
         </div>
       </header>

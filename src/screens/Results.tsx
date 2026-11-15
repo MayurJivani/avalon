@@ -9,6 +9,7 @@ import { Ransom } from '../ui/Ransom.tsx';
 import { Glyphs, SoundToggle } from '../ui/bits.tsx';
 import { Check, Cross, Skull } from '../ui/Icons.tsx';
 import { Countdown } from './Assassination.tsx';
+import { QuestReveal, VoteReveal } from './Overlays.tsx';
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -51,10 +52,15 @@ export function Results({ room, me }: { room: RoomView; me: string }) {
   const g = room.game!;
   const send = useStore((s) => s.send);
   const [strike, setStrike] = useState(!!g.assassinTarget);
+  // a game that ended on a vote or a quest still gets that reveal before the verdict
+  const lastP = g.proposals[g.proposals.length - 1];
+  const lastQ = g.quests.reduce((n, q, i) => (q.result ? i : n), -1);
+  const [finale, setFinale] = useState(!g.assassinTarget && !!lastP);
   const good = g.winner === 'good';
   const isHost = room.hostId === me;
   const names = (id: string) => room.members.find((m) => m.id === id)?.name ?? '???';
-  useEffect(() => { if (!strike) play(good ? 'success' : 'fail'); }, [strike]);
+  const hold = strike || finale;
+  useEffect(() => { if (!hold) play(good ? 'success' : 'fail'); }, [hold]);
 
   return (
     <main
@@ -66,11 +72,16 @@ export function Results({ room, me }: { room: RoomView; me: string }) {
       }}
     >
       <Glyphs count={10} color={good ? '#b39a4e' : '#b3122e'} />
-      <AnimatePresence>{strike && <Strike key="s" room={room} onDone={() => setStrike(false)} />}</AnimatePresence>
+      <AnimatePresence>
+        {strike && <Strike key="s" room={room} onDone={() => setStrike(false)} />}
+        {finale && (lastP.approved
+          ? <QuestReveal key="q" q={g.quests[lastQ]} index={lastQ} onClose={() => setFinale(false)} />
+          : <VoteReveal key="v" p={lastP} members={room.members} onClose={() => setFinale(false)} />)}
+      </AnimatePresence>
 
       <div className="relative mx-auto max-w-6xl px-5 pb-16 pt-5">
         <header className="flex justify-end"><SoundToggle /></header>
-        {!strike && (
+        {!hold && (
           <>
             <section className="text-center">
               <motion.p className={`font-jp text-[clamp(2rem,8vw,4rem)] ${good ? 'text-[#8a6d16]' : 'text-blood'}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -121,9 +132,9 @@ export function Results({ room, me }: { room: RoomView; me: string }) {
                 <ol className="mt-4 flex flex-col gap-2">
                   {g.quests.map((q, i) => (
                     <li key={i} className={`flex items-center justify-between gap-3 px-3 py-2 ${q.result === 'success' ? 'bg-[#9fbf7a] text-ink' : q.result === 'fail' ? 'bg-crimson text-[#fff4ea]' : good ? 'bg-black/5' : 'bg-white/5'}`}>
-                      <span className="font-display text-xl uppercase">Quest {i + 1}</span>
+                      <span className="shrink-0 whitespace-nowrap font-display text-xl uppercase">Quest {i + 1}</span>
                       <span className="text-sm">{q.team ? q.team.map(names).join(', ') : 'Not attempted'}</span>
-                      <span className="font-display uppercase">{q.result ? `${q.result} · ${q.fails} fail${q.fails === 1 ? '' : 's'}` : '—'}</span>
+                      <span className="shrink-0 whitespace-nowrap font-display uppercase">{q.result ? `${q.result} · ${q.fails} fail${q.fails === 1 ? '' : 's'}` : '—'}</span>
                     </li>
                   ))}
                 </ol>

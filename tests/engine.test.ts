@@ -140,9 +140,15 @@ describe('assassination', () => {
   it('evil wins when Merlin is found', () => {
     const g = toAssassin();
     expect(assassinate(g, 'p1', 'p2')).toMatch(/Only the Assassin/);
-    expect(assassinate(g, 'p0', 'p1')).toMatch(/servant/);
+    expect(assassinate(g, 'p0', 'p0')).toMatch(/someone else/);
     expect(assassinate(g, 'p0', 'p2')).toBeNull();
     expect(g.winner).toBe('evil');
+  });
+  it('striking an unknown evil player (Oberon) is allowed and counts as a miss', () => {
+    const g = rigged(['assassin', 'oberon', 'merlin', 'servant', 'servant']);
+    runQuest(g, 0); runQuest(g, 0); runQuest(g, 0);
+    expect(assassinate(g, 'p0', 'p1')).toBeNull();
+    expect(g.winner).toBe('good');
   });
   it('good wins when the Assassin misses', () => {
     const g = toAssassin();

@@ -10,6 +10,7 @@ import {
 import { Ransom } from '../ui/Ransom.tsx';
 import { Hood, SoundToggle, seatColor, Glyphs } from '../ui/bits.tsx';
 import { Check, Copy, Crown, Door } from '../ui/Icons.tsx';
+import { RulesButton } from '../ui/Rules.tsx';
 
 export function Lobby() {
   const { state, send } = useStore();
@@ -53,8 +54,8 @@ export function Lobby() {
       <Glyphs count={6} />
       <header className="relative z-10 flex items-center justify-between gap-3">
         <button className="btn btn-ghost btn-sm" onClick={() => send('room:leave')}><Door size={18} /> Leave</button>
-        <span className="font-jp text-sm text-dim">集会所 · The Gathering</span>
-        <SoundToggle />
+        <span className="hidden font-jp text-sm text-dim sm:inline">集会所 · The Gathering</span>
+        <div className="flex items-center gap-2"><RulesButton /><SoundToggle /></div>
       </header>
 
       <section className="relative z-10 mt-6 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">

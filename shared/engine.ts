@@ -161,7 +161,8 @@ export function assassinate(g: Game, by: string, target: string): string | null 
   if (g.phase !== 'assassin') return 'The assassin cannot strike now.';
   if (g.roles[by] !== 'assassin') return 'Only the Assassin chooses.';
   if (!g.seats.includes(target)) return 'Unknown target.';
-  if (TEAM[g.roles[target]] === 'evil') return 'Choose a servant of Arthur.';
+  // any other player is a legal target: refusing evil ones would leak who Oberon is
+  if (target === by) return 'Choose someone else.';
   g.assassinTarget = target;
   if (g.roles[target] === 'merlin') end(g, 'evil', 'The Assassin found Merlin. Hope dies with him.');
   else end(g, 'good', 'The Assassin struck the wrong heart. Merlin lives.');

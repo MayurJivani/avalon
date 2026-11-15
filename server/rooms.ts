@@ -55,7 +55,7 @@ export function joinRoom(room: Room, token: string, name: string) {
 }
 
 export function leaveRoom(room: Room, id: string) {
-  if (room.game) err('You cannot leave mid-game; close the tab to step away.');
+  if (room.game && room.game.phase !== 'over') err('You cannot leave mid-game; close the tab to step away.');
   room.members = room.members.filter((m) => m.id !== id);
   if (room.hostId === id && room.members.length) room.hostId = room.members[0].id;
 }
@@ -84,7 +84,8 @@ export function startGame(room: Room, by: string) {
   requireHost(room, by);
   if (room.game && room.game.phase !== 'over') err('A game is already running.');
   const seated = room.members;
-  if (seated.some((m) => !m.connected)) err('Someone is disconnected.');
+  const gone = seated.filter((m) => !m.connected).map((m) => m.name);
+  if (gone.length) err(`${gone.join(', ')} disconnected. Return to the lobby to play without them.`);
   if (seated.some((m) => !m.ready && m.id !== room.hostId)) err('Not everyone is ready.');
   const e = validateSpecials(room.specials, seated.length);
   if (e) err(e);
@@ -101,6 +102,7 @@ export function backToLobby(room: Room, by: string) {
   requireHost(room, by);
   if (room.game && room.game.phase !== 'over') err('Finish the game first.');
   room.game = null;
+  room.members = room.members.filter((m) => m.connected); // seats lost during the game would block the next start
   room.members.forEach((m) => (m.ready = m.id === room.hostId));
 }
 

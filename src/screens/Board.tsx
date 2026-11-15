@@ -11,6 +11,7 @@ import { Check, Crown, Cross, Eye, Scroll, Seal, Skull, Sword, Wifi } from '../u
 import { Knowledge } from './RoleReveal.tsx';
 import { QuestReveal, VoteReveal } from './Overlays.tsx';
 import { Assassination } from './Assassination.tsx';
+import { RulesButton } from '../ui/Rules.tsx';
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -391,6 +392,7 @@ export function Board({ room, me, secret }: { room: RoomView; me: string; secret
         <div className="flex items-center gap-1 sm:gap-2">
           <button className="btn btn-ghost btn-sm" onClick={() => setPeek(true)}><Eye size={18} /> My role</button>
           <button className="btn btn-ghost btn-sm lg:hidden" aria-expanded={log} onClick={() => setLog(!log)}><Scroll size={18} /> <span className="sr-only sm:not-sr-only">Chronicle</span></button>
+          <RulesButton />
           <SoundToggle />
         </div>
       </header>
@@ -399,7 +401,7 @@ export function Board({ room, me, secret }: { room: RoomView; me: string; secret
         <div className="flex flex-col gap-5">
           {/* table */}
           <LayoutGroup>
-            <section aria-label="The round table" className="relative lg:min-h-[640px]">
+            <section aria-label="The round table" className={`relative ${g.seats.length > 8 ? 'lg:min-h-[740px]' : 'lg:min-h-[640px]'}`}>
               <div className="pointer-events-none absolute inset-[6%] hidden rounded-[50%] border-2 border-dashed border-plum-dk lg:block" aria-hidden />
               <div className="pointer-events-none absolute inset-[16%] hidden rounded-[50%] bg-[radial-gradient(closest-side,#221e27,transparent)] lg:block" aria-hidden />
               <div className="relative z-10 mx-auto mb-5 w-full max-w-[34rem] lg:pointer-events-none lg:absolute lg:left-1/2 lg:top-1/2 lg:mb-0 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:px-6">

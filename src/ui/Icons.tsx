@@ -43,6 +43,9 @@ export const Door = ({ size, ...p }: P) => (
 export const Scroll = ({ size, ...p }: P) => (
   <svg {...base(size, p)}><path d="M6 4h12.6v13.8a3 3 0 0 1-3 3H5.4a2.6 2.6 0 0 1-2.6-2.6v-1.4h12.4v1.2a2.8 2.8 0 0 0 5.6 0" /><path d="M9 8.4h6.4M9 12h6.4" /></svg>
 );
+export const Book = ({ size, ...p }: P) => (
+  <svg {...base(size, p)}><path d="M12 6.2C9.6 4.4 6.6 4 3.2 4.6v14c3.4-.6 6.4-.2 8.8 1.6 2.4-1.8 5.4-2.2 8.8-1.6v-14c-3.4-.6-6.4-.2-8.8 1.6zM12 6.2v14" /></svg>
+);
 export const Wifi = ({ size, ...p }: P) => (
   <svg {...base(size, p)}><path d="M2.2 9a15 15 0 0 1 19.6 0M5.4 12.5a10 10 0 0 1 13.2 0M8.7 16a5 5 0 0 1 6.6 0" /><circle cx="12" cy="19.4" r="1.1" fill="currentColor" /></svg>
 );
